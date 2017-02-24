@@ -1,0 +1,30 @@
+{
+  "name": "common-corpus",
+  "version": "0.0.1",
+  "description": "common texts I use in NLG projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelpaulukonis/common-corpus.git"
+  },
+  "keywords": [
+    "texts",
+    "ebooks",
+    "nlg",
+    "corpus",
+    "corpora"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michaelpaulukonis/common-corpus/issues"
+  },
+  "homepage": "https://github.com/michaelpaulukonis/common-corpus#readme",
+  "dependencies": {
+    "iconv-lite": "0.4.15",
+    "nlp_compromise": "6.5.3"
+  }
+}
