@@ -1,0 +1,1043 @@
+Hyphenation: A discussion of the changing principles of word division, now implemented by computers, in British English and American English, with notes on hyphenation of 39 other languages.
+
+Ronald McIntosh and David Fawthrop
+
+First published 1990, Reprinted 1991, ISBN 1 872757 01 4
+Second edition 1994 (revised for ASCII electronic distribution)
+Third Edition 2000 (revised for HTML electronic distribution)
+
+There are still a few hard-back and paper-back copies with numerous illustrations available.
+
+(C) Copyright Ronald C McIntosh 1990/1994 all rights reserved
+Parts (C) Copyright David Fawthrop 1995/2000 all rights reserved
+
+Published by Computer Hyphenation Ltd Hyphen House, 8 Cooper Grove, Shelf, Halifax, HX3 7RF. (UK) Phone/Fax/Answer +44 1274 691092. Internet: hyphen@hyphenologist.co.uk
+
+Computer Hyphenation Home Page
+
+The Program HYPHENOLOGIST, is the copyright of Computer Hyphenation Ltd.
+
+This book is published in electronic form, and may be copied and printed for private use, academic use, or study, as required.
+
+This book may be freely distributed on computer archives, bulletin boards, CDROMs, etc. provided that no more than the cost of copying is charged to the end user.
+
+Recipients may distribute to others, provided that no more than the cost of copying is charged.
+
+Please e-mail Dave Fawthrop hyphen@hyphenologist.co.uk if you get a copy just to let us know where it goes. Reprinting costs nothing; comments appreciated.
+
+Copying for commercial purposes is specifically forbidden.
+Back Cover Blurb
+
+Publishers and printers have long been confused about the word-division of English, some favouring the root-based method and others the phonetic principle. Since the computer took charge of composition, the quality of hyphenation has deteriorated. Some word-breaks surprise and disturb the reader.
+
+The author explains how British "custom and practice" originated, and how American hyphenation now co-exists with the British style, but may soon dominate because of the influence of imported software.
+
+Hyphenation is not always straightforward in other European languages, but a computer program based on expert local knowledge can successfully handle all languages, and even mix them on one page. Additional information about word-division of European languages is included in this edition.
+
+The author, originally a Fleet Street photo-journalist, became a litho printer and subsequently co-inventor of several electronic typesetting systems, including the Linotron 505. He was awarded the gold medal of the Institute of Printing in 1985.
+
+    DEDICATION
+    For all hyphen-twitchers (May the sources of their discomfort be speedily removed.)
+
+    Hyphen-twitcher, a reader who suffers a mild spasm when a bad word-break leaps out of the printed page.
+
+CONTENTS
+
+Preface
+Chapter 1: To make a well-spaced page
+Chapter 2: Homo scri-bens, homo im-pri-mens
+Chapter 3: To split or not to split
+Chapter 4: Errors that betray the printer's craft
+Chapter 5: They seek it with thimbles, they seek it with care
+Chapter 6: Dictionary division, is it harmless drudgery?
+Chapter 7: Hyphenation by computer
+Chapter 8: In search of some principles
+Chapter 9: Dividing English words, the general precepts
+Chapter 10: The hyphened word
+Chapter 11: American hyphenation practice
+Chapter 12: Hyphenating other languages
+A glossary of some hyphen terms
+And now a word from our sponsor
+
+Johannes Genfleisch Gutenburg 1398(?)-1468
+
+
+Preface
+
+When William Shockley and his colleagues at Bell Labs invented the transistor in 1948 the first impact on public consciousness was the arrival of miniature radios, very portable and inexpensive, but producing terrible, distorted sound. Things had got worse before getting better. Eventually the improvement cycle worked its way through the convenience/economy phase and delivered high quality, affordable digital sound to the living room.
+
+The revolution in printing technology came later, slowly in the 60s and 70s and at breakneck pace in the 80s. Because printing, although seemingly primitive in many ways, was so highly developed in its techniques and aesthetic quality, the first improvements were again chiefly to provide speed of production, with economy and convenience.
+
+Unfortunately the end-product now frequently betrays its own brilliant technology by poor design, lack of aesthetics, and sloppiness in text handling. In spite of spelling checkers and hyphen dictionaries, the output of desktop computers and even of large composition systems is spattered with errors, misprints and ridiculous word-breaks. Bad hyphens (like distorted music and other people's Walkmans) can destroy the peaceful enjoyment of a quality product. For this particular problem there are solutions available, but no solution will work well unless print creators learn to care more about their craft.
+
+This little book is to encourage careful hyphenation by the new printers, and by those professionals in print and publishing who remember the high standards of yesterday. They are the people best placed to restore the original, unobtrusive hyphen to its useful function.
+Chapter 1:
+To make a well-spaced page
+
+What exactly is a hyphen? Every schoolboy knows, although perhaps only Lord Macaulay's schoolboy could explain it clearly: it is that small horizontal bar which is used either to join two elements of compound words (the link-hyphen), or to signal that a word is being split at the end of a line of printing (the break-hyphen). A very small printed mark with two very important functions in printing.
+
+There is an example of a link-hyphen in the chapter heading above, joining two whole words, and for an example of the break-hyphen glance down the page at the ends of lines. In both cases the function is discreet; in particular the reader should be scarcely aware of the artificial break. Good hyphens must always be inconspicuous, so as not to disturb the flow of meaning.
+
+A word may be defined as the smallest intelligible unit of language which can stand alone. When we create an arbitrary sub-unit at the line-end we do so at our peril, since interference may weaken the intelligibility.
+
+All is well so long as the first part of the word has a familiar shape, or forms a shorter word in its own right. Preferably both halves should be easily recognized. But if a completely unfamiliar letter sequence is created, awkward or even absurd, then we have indeed spoiled the flow. We have given the reader an unnecessary mental jolt, and both the look of the printed page and its meaning have suffered.
+
+The hyphen is not a letter, nor is it properly a punctuation mark, since it does not share the latter's function to give proper structure and clarity of meaning to a sentence. Yet in the printer's alphabet it is a vital element, without which he would find it hard to make pleasing pages with the necessary variety of design. To the printer, it is also an element which must be specified as part of a particular type-family, in correct weight and style, so as to harmonize with its grander literary neighbours. It belongs to the fount or font, the complete set of type of one size and face.
+
+The hyphen exists to help fulfil the true purpose of the printed page, its readability. In composing a column of justified type it is sometimes necessary to divide a word so as to align the right-hand margin without allowing either too much or too little white space between the words. The computer which nowadays controls this operation has an arithmetic program enabling it to allocate appropriate spacing. The "ideal" word-space falls about halfway between the tolerable minimum (3 units) and maximum (9).
+
+If the widest letter in use has a width of 18 comparative units, then the average letter in a proportionately-spaced font is about 8 units wide. To give the column a good appearance, surplus units of width remaining at the line-end have to be shared among the word-spaces, preferably to average these at 5 or 6 units. There are many techniques the typesetter can exploit; he may work to a wider than optimum word-space, being prepared sometimes to invoke negative spacing, or he can call upon automatic kerning adjustments, a pre-arranged means of individually varying the fit of hundreds of letter-pairs. Obviously, the ideal space is something that can be aspired to, but is not always achieved.
+
+    Pause for quotation:
+    The alphabet as such contains no symbol for word-division... the hyphen is a modern accretion which has never been systematically integrated into the repertory of letters... Even more striking is the late standardization of the practice of leaving spaces between words. One is tempted to compare the introduction of the space as a word boundary to the invention of the zero in mathematics.
+    Roy Harris, Prof. of General Linguistics, University of Oxford.
+    THE ORIGIN OF WRITING 1986
+
+Equally objectionable are islands of white space and also cramped and crowded words; either excess whiteness or blackness disturbs the subtle contrasts of the letter design. Each type face has a built-in harmony unique to itself, a sort of visual rhythm. The open space contained within the individual letter shapes is carefully balanced against the space which separates letter from letter. This ratio of black to white establishes the even "colour" of the line and page, an evenness which is disturbed unless the spacing between words is optimized.
+
+The careful division of a few words, where necessary, maintains the perfection of the typography, and maximises legibility. A terrible sin, spoiling the whole effect, is to allow so-called "rivers" to form; these are white apertures which may appear by pure chance or by poor technique, channels of white space flowing randomly through the text. Equally bad is to add artificial spacing between the letters, so destroying the intended colour and contrast.
+
+Even when setting with fixed word-spaces, thus producing unjustified or "ragged right" setting as on this page, the facility to divide certain words will be necessary. Since too great a variation can look ugly, judicious hyphening is very helpful.
+
+The visual quality of typography depends heavily upon this blend of artistry and graphic design, two concepts which are inextricably tied together in the page. The design elements of foundry letters stem from the work of artisan metal-workers. With graver and burin, they incised freely-curving letters on the surface of steel punches, which were then used to make moulds from which individual types were cast. These men demonstrated skills quite as remarkable as those of the earliest watchmakers and silversmiths. Their miniature products were types rejoicing in the names of precious stones, such as pearl, agate and ruby, names which were in use until very recently. The craft flourished particularly in 15th and 16th century Renaissance Italy. Remarkably, the work of these anonymous contemporaries of Michelangelo and Cellini was so fine that it remains the basis of the most successful text types still in use today.
+
+The craft of assembling the individual metal types into a relief letterpress block is now almost obsolete, but it has bequeathed an elaborate typographic culture to the modern printer. In spite of the magical new electronic tools now at his disposal, he finds comparable excellence hard to achieve. Every reader, whether or not he fully understands just why this is, has high expectations of the printed page. He "knows what he likes", but he can easily be disappointed. For example, just one letter straying by accident from a different type face shrieks the message !WRONG!FONT! It is something which cannot be tolerated.
+
+Occasionally a keyboard operator may put an uppercase letter O when what is needed is a figure 0 (it may even look the same on the monitor screen). But the properly designed letter is always fatter and rounder than the figure, and so the bad result sticks out like a sore thumb, even to the legendary man on the Clapham omnibus. In the same spirit, a brutish word-break is a frontal attack on the sensibilities of the ordinary reader.
+
+It is a weak excuse to claim that such niceties matter nothing to the commuter strap-hanging on a tube train, struggling with his evening paper. There is no easy let-out for the printer, unless he betrays his heritage. Nobody else is going to maintain the standards of his craft. He must spell his words correctly, and he must assemble them in good order, using the hyphen wisely. It is his own sense of design, removing visual disharmonies, and contriving that the white spaces co-operate with the black type, that will create aesthetic success.
+
+Early 17th century printing shop. Copper plate illustration by Hans Merian.
+
+Published in Gottfried's Chronicle, Frankfurt/M., 1642.
+
+
+
+These techniques are the brushwork and the painterly style of the printer. With a touch of magic he produces the proper message out of the hat, without explaining how the trick is done. Through conditioning which started in kindergarten days, we have all learned to absorb 10,000* letter shapes and styles which form the invisible construct of good typography, greatly assisted by our modest but heroic hyphen. The cunning trick works well, and we the readers enjoy its unobtrusive success.
+
+Consulting the Master Printer
+
+(about a poor hyphen?)
+
+    Footnote:
+    This surprising tally is probably an underestimate of the actual number of differing typographic shapes absorbed without conscious awareness by the average adult reader. The great expansion of advertising in modern times is a major factor. In the mid-60s a survey found that about 400 type faces were appearing each year in the DAILY MIRROR. Some trade typesetters in London offer their clients a choice of 2000 type faces. On the internet in 2000 there are perhaps 10,000 different faces, not counting near duplicates such as Helvetica, Arial, Swiss etc.
+
+Ambidextrous monk contemplates the next page.
+
+
+Chapter 2:
+Homo scri-bens, homo im-pri-mens
+
+Our unassuming hero has never figured in any formal history of printing, being insufficiently esteemed by scholars. We are at liberty to speculate how the marriage of calligraphy and monkish illustrative art combined to create, in some medieval scriptorium, a late accessory to the alphabet.
+
+The monks wrote their Latin without any space between words, and without a formal procedure for word-division. Any word could be arbitrarily broken and continued on the following line, but usually the second half of the word would start with a consonant, or a pair of consonants if these were a familiar start to a normal Latin word. Sometimes the monks, with their knowledge of Greek, used a pairing copied from the start of Greek words. The favoured consonant pairs from Latin were /gr/tr/pr/pl/ and the like, while the equivalent borrowings from Greek were such combinations as /gn/mn/ct/pt/bd. Not until the 8th and 9th centuries did interword spaces appear, and the first rare markers to show divided words have been found in writings of the 11th and 12th centuries.
+
+    A fragment from Livy's CODEX PUTEANUS, copied in all-capitals about 500 AD, shows Latin written continuously as in speech,without word spaces, punctuation, or word-division.
+
+
+    OMNIACUMCURARENUN...........(split)
+    TIANTINSIDIASPROFECTO
+    ESSE.IGNESINPARTECAS...........(split)
+    TRORUMQUAEUERGANT
+    ADINHOSTEMRELICTOS
+    TABERNACULAAPERTA
+    ETOMNIACARAINPROMP..........(split)
+    TURELICTA.ARGENTUM
+    QUIBUSDAMLOCISTEME
+    REPERUIASUELOBIEC...............(split)
+    TUMADPRAEDAMUIDIS............(split)
+    SE.QUAEADDETERENDOS.........(split)
+
+
+    When Latin flowed on forever
+
+The scribes composed their beautiful psalters and other holy books with goose-feather pen and brush, in the Textura style. They compressed their regular Latin scripts into a rectangular format, enriched on every side by decorative curlicues and floral illuminations. When a sentence ended short of the margin, an extra decoration could be inserted to fill the space, and give a tidy shape. If a word was threatening to overrun, it could either be shortened by inventing an abbreviation, or a few letters could be carried over to the next line. Since the latter solution made reading more difficult, the monks eventually added two ticks in the margin to alert the reader. A century or so later, this double marker was reduced to a singularity, and the hyphen as we know it was born.
+
+Our little sign had become established in time to be of use to an innovative German printer, who in the early 15th century was struggling to perfect a completely new way to create and assemble metal types, a method which would soon put the monks out of business. But the clerics deserve full credit for their recruitment of this acolyte.
+
+    Pause for quotation:
+    "With 26 soldiers of lead you can conquer the world..." These words may have been used by the Englishman Wynkyn de Worde, an apprentice of William Caxton, who profitably printed vast numbers of religious pardons and other ephemera appealing to the common man. They are a dramatic claim for the power of the printed word. Oddly enough, the earliest typesetters conquered the world using only 24 or 25 letters, when setting Latin and English. In most cases they substituted v for u, and i represented j. But this low number may give us the wrong impression, that their task was easy. Far from it. William Caxton kept in his italic typecase an enormous printer's alphabet of 302 characters: upper- and lower-case letters, punctuation and other "sorts", and a great many ligatures, which were joined letters imitating the pleasing calligraphic inventions of the monks. Very few ligatures have survived, only /fi/ffi/ fl/ffl/ in the common text faces, and occasional rarities such as /ct/ in other type faces. Sometimes ffi is required and at other times f and fi, in order to hyphenate dif-fi-cult for instance. Composition programs can cope with this problem.
+
+Johannes Gensfleisch Gutenberg, a city official of Mainz, had invented movable types, and indeed re-usable types. He assembled individual letters together in a composing stick, then held the lines together in a rigidly locked forme (frame), which could be inked and so printed, under great pressure. Afterwards the letters could be redistributed back to their case and thence composed into new pages. The printed result was something close in style to the monks' script, which came to be known as Gothic black-letter.
+
+Gutenberg's brilliant but difficult procedure was bedevilled by problems, and had already impoverished several wealthy merchants who supplied the venture capital. With another stroke of genius, the inventor brought the hyphen from its marginal location to be solidly locked up with the rest of the type.
+
+Devils threaten to help an early printer,
+
+whether he likes it or not!
+
+
+
+It was a seemingly trivial event, compared with his other massive problems. He had to prepare his own paper and obtain vellum for a special edition of 30 Bibles (these used the hides of 10,000 calves). He had to formulate his own inks (black and coloured). Not least, he had to design and construct the first letterpress printing machine. It all took many years of effort, and many years of hiding from creditors.
+
+Gutenberg was making the world's first attempt at mass production, but since it proved just too difficult to cast type of the right quality, he was compelled to use the same good letters over and over again, breaking down each page forme as soon as enough sheets had been reproduced. Solving the hyphen problem was just one more defeat for the notorious printer's devils, those pesky, plaguey imps who figured frequently in contemporary drawings of the process.
+
+But no doubt it helped to impress his backers, who dug deeper into their pockets to finance the production of more and more saleable books, first the 42-line Bible, then the 36-line version which by its shorter page gave a small technical advantage in higher productivity.
+
+Portion of the Annunciation from the 36 line bible.
+
+Some initials in the 42 line bible are hand painted.
+
+The first run of Bibles was completed during the year 1455, after three years of printing. Each of the 200 copies was equally perfect and beautiful, and ready for sale. Gutenberg had learned much from the writings of the monks. Forty-eight of these Bibles have survived to the present day. As it must have done in 1455, the eye rests with pleasure upon the opened book, one of mankind's greatest technical and aesthetic achievements.
+
+Europe acknowledged his success, and clever emulators were soon hard at work. By the year 1500 they had produced more than 10 million copies of 40,000 different books in 260 printing sites throughout Europe. These were the so called incunabula, or cradle books, a celebration of the art of printing in its infancy.
+
+Sometimes Gutenburg's hyphens came thick and fast.
+
+Gutenberg, as well as inventing an industry, had demonstrated what Marshall McLuhan called the principle of linear word display, with some modest help from the Divis (the new hyphen was described in German by this now-extinct word). He could hardly have imagined how this would cause a revolution in communication, creating the most successful application of mass production the world has seen. Five hundred years later, McLuhan showed in his book THE MEDIUM IS THE MESSAGE how the Gutenberg way of presenting ideas has conquered all media, including computer technology, and become the paramount vehicle of communication.
+
+Three colour printing is used on The Mainz Psalter 1459
+
+The first English Bible (Tyndale & Coverdale)
+
+with single hyphens
+
+The doubled hyphen used in the King James Bible.
+
+
+
+A little-noticed paradox of the revolution, but central to the purpose of this thesis, is that you cannot assemble words into effective communication unless you are prepared to break a few of them. But you must do it with skill. The automation of word assembly does not excuse editors and printers from their aesthetic obligation.
+
+Technical innovation has recently brought laser-generated typography of real quality to office printing, thus brilliantly making obsolete the rough and jagged type we used to see from the computer. But the word processing methods are still quite crude and give us too many "rough and jagged" hyphens. Remembering the remarkable artistic achievement of Gutenberg, we should resolve to defeat all of these modern gremlins, and so make the hyphen invisible again.
+
+Chapter 3:
+To split or not to split
+
+As recently as ten years ago there was still at work a legion of grizzled compositors, journeymen who answered to the Imperial Father of the Chapel in their trade union devotions, and to the pernickety proof-readers and editors for their spelling, their adherence to house style, and their word-breaks. They were the inheritors of the once jealously guarded know-how of the art of printing, which had changed remarkably little since Gutenberg, and they served as a discreet but vital interface between the author and his readers.
+
+Following the custom of their craft, sometimes also described as their commonsense, the comps placed the hyphens where they seemed necessary and where they looked right. These men were professionals who could assess every aspect of a typographic composition. More often than not, their well-judged product met with approval from the exacting guardians of print quality, the proof-readers, men of erudition with an uncanny eye for errors (and men also who had developed the uncanny ability to close both eyes, while resting lightly on the point of a sharp pencil).
+
+In fact, when the comps placed their careful word-breaks they were operating a procedure which had never been fully defined, and whose worth was fully appreciated only when it was gone. The client editors remained blissfully unaware of the deep level of expertise, and of the fact that sometimes groups of lines and whole paragraphs had been quietly re-shuffled, until the chief comp felt fully satisfied with the first proof.
+
+Some years ago, when the old technology still ruled, a famous dictionary was set by this dedicated breed of workers. In the printed product only four or five hyphens showed on a double-column page. When the same text had to be reprocessed by a powerful computer, every page displayed as many as 20 or 30 hyphens. The new method could not match the quality of the old because of the limitations of the computer program, which had not been instructed how to "cut and try again" for a better result. Happily, automatic justification is now getting better all the time.
+
+A secondary reminder from this example is that there is no special virtue in many good hyphens, quite the reverse being true. If the design and methodology are carefully matched, it may be possible to achieve good results with very few word-breaks, or even none. But typography in the real world is rarely undemanding, so we must strive to serve it with the best techniques.
+
+In the past the diligent British compositor learned to respond to the opinion of classically educated editors and publishers, who believed that word-division should be based on etymology. Wherever possible, words were divided according to their Greek or Latin roots, a method which quite often worked well, but which also produced breaks which were very unhelpful to the reader, although they looked cosmetically good to the classicist.
+
+In a truly literal sense, this respect for etymology can mislead the reader, because of its inclination to preserve a recognisable root at the line-end. Take the obvious Latin root, or prefix, am-bi- (from ambo, both). This works perfectly with: /am-bi-dex-trous/ am-bi-vert/ am-bi-gu-ity/ am-bi-gu-it-ies/ (Oxford Dic.of Spelling 1986). The same dictionary, however, perforce acknowledges pronunciation, when it eschews: /am-bi-gu-ous/ in favour of /am-bigu-ous/ (which most other dictionaries show as /am-big-u-ous/).
+
+Logically, pronunciation which has proved useful in one very typical situation should then be retained as an additional and permanently useful method of word-division. However, another example: /am-bi-val-ent/ from the same work again preserves the root am-bi-. This time it is misleading to the reader, who (if he knows the word) needs to pronounce it as /am-biv-a-lent/ which is in fact how it appears in other dictionaries. If a student of English does not know the word he first has to locate it in a conventional dictionary, and then correctly interpret the unfamiliar version presented in international phonetic symbols, suitably stress-marked, in order to pronounce it as: /am-biv-a-lent/.
+
+There are so many cases of uncertainty and unhelpfulness generated by the etymological method that one must question both the validity and the utility of this approach. It assumes more knowledge in the reader than can reasonably be expected. (Some examples are illustrated below.)
+
+roots............pho-to-graph.................pho-to-gra-pher
+sound            pho-to-graph                 pho-tog-ra-pher
+roots............elec-tro-lyte................elec-tro-lysis
+sound            elec-tro-lyte                elec-trol-y-sis
+roots............omni-po-tent.................omni-vor-ous
+sound            om-nip-o-tent                om-niv-or-ous
+roots............poly-chro-matic..............poly-gam-ist
+sound            pol-y-chro-mat-ic            po-lyg-a-mist
+roots............por-no-graphy................por-no-grapher
+sound            por-nog-ra-phy               por-nog-ra-pher
+
+Professor Walter W. Skeat, renowned editor of Oxford's CONCISE ETYMOLOGICAL DICTIONARY, stated in 1905: "Nothing is gained by pretending to keep the root intact, when the spoken utterance does nothing of the kind." His advice was to divide all words by sound and pronunciation, but not to expect to establish rigid and invariable rules; he thought division should be flexible according to usage and convention in each publishing house. The professor pointed out that there was potential conflict between the original root or affix, from Latin or other sources, and its development within English as a new semantic element, in one or more forms.
+
+He was advocating a profound change in the methodology, but at the time, it seems, nobody was listening. Hyphens remained "according to Hart" (namely Horace Hart, Printer to Oxford University, whose handbook "Rules for Compositors and Readers at the University Press" was published in 1904. Noting the year, it is interesting to speculate: had Skeat read Hart, and was he reacting to the now-famous RULES?) Of course, without benefit of Oxford advice the American lexicographers had long been doing very much what Skeat recommended.
+
+Reluctance to break words at all is often evident in academically conservative lists of hyphened words, but this can make life difficult for the practical printer. Editors have been accustomed to mark "Avoid break" when they found difficult words in proofs. To them this was an easy way out, but to the printer the simple instruction might easily become a time-consuming task, or prove virtually impossible.
+
+Some of the people who gave advice only added to the fog. Hart's RULES, the bible of Oxford University Press (OUP), is very helpful in particularizing a thousand aspects of the Oxford style to those already reasonably skilled in the printing art, but the advice does not reach into the corners of the word-division problem. Perhaps the best advice is in the first few words: "Avoid divisions if at all possible" which reminds us of Mr Punch's advice to those about to marry: "DON'T".
+
+Hart's RULES appears to oversimplify what is a very big subject, mainly by leaving out the awkward facts. (But in recent editions Hart is very good on hyphenating French, German and Italian!) Some of the examples are questionable, and some of the alleged rules look rather weak, since many exceptions can be shown to exist. Anyone venturing into a minefield with a manual as inadequate as this could expect to be blown up.
+
+Hart's RULES in effect opts out of the problem by referring readers to a tract by K.Sisam of the Society for Pure English, (No. XXXIII, 1929). Having recommended this fuller treatment, it instantly damns Sisam's work with the faintest possible praise: "The divisions noted as preferable are not free from objection, and should be avoided when it is at all easy to do so." After that, how many buyers of the RULES were keen enough, we wonder, to ferret out the Sisam essay?
+
+    Pause for a touch of the classics:
+
+    Old habits die hard. The Greek initial letter-pairs became part of the wisdom of English scholars and grammarians, who even in their school textbooks of Latin placed word-breaks before these combinations: /o-mnis/ re-ctus/ a-bdomen/ ma-gnus/ la-psus. Future printers were among their pupils, with the result that until the 19th century we find English books showing such word-divisions as: /a-mnesty/ ba-ptism/ do-gma/ perfe-ction. This last word was a good excuse for the printer to use his /ct/, one of the few ligatures still surviving in modern times. Respect for this strong classical tradition accounts for the recommendations for Latin and Greek division still offered in Hart's RULES. Somewhat puzzling to printers confronted for the first time with a modern Latin text, these rules really represent an antique style. Nevertheless, its influence on hyphen preferences is still just discernible in Italian and also some other Latin-based languages of eastern Europe.
+
+There may be more to this than meets the eye. Kenneth Sisam, who had some association with OUP, had published his own list of exceptions to Hart's RULES; further, he had the temerity to point out that the 1914 edition of the RULES showed, in its own setting by the Press, a good proportion of divisions which did not follow the precepts of Horace Hart. In mitigation, he did not fail to report also that Johnson's TYPOGRAPHIA of 1824, a manual of advice to compositors, similarly managed quite often to break its own rules for word-division. We can image that the Oxford editors were not tremendously appreciative of Sisam's comments; they may even have felt a little foolish. Yet K.Sisam did give a splendid historical survey, and put forward his own recommended list of hyphen priorities: first, follow etymology wherever possible; second, respect tradition; and (third) "use pronunciation as the surest test". He makes many perceptive comments, but his own erudition prevents him from spelling out any practical philosophy for our ink-stained printer. And possibly the episode of the Sisam Tract put a dampener on any chance of OUP becoming more systematic about word-division.
+
+Eric Partridge, the admirable commentator on lexicographic matters, and author of YOU HAVE A POINT THERE, probably also felt that everything that there was to be said about word-division had already been said. He produced the following minimal recommendations in one uncharacteristically obfuscated paragraph:
+
+The chief purposes of the typographical and otherwise conventional hyphen are these: For the division of a word into syllables, as a-bout, actu-a-ri-al (loosely ac-tu-ar-i-al), di-vi-sion (strict) or di-vis-ion (accepted) or div-is-ion (loose but very common). To diverge for a moment: as English has, in a sense, corrupted every long vowel, so it has also departed from the normal syllabification (British) or syllabication (American) of Greek, Latin, the Romance and most other languages. Thus, syllabication is often divided thus: sy-llab-i-ca-tion (si-lab-i-ca-shun) or sy-llab-i-cat(i)-(i)on (si-lab-i-cash-un). But the Medieval Latin genitive syllabicationis was divided thus: syl-la-bi-ca-ti-o-nis. The ideal is: Whenever possible, begin a syllable with a consonant."
+
+Eric Partridge was probably having a off-day. The opacity is merely bewildering to the innocent printer instead of offering him a practical course of action. It is just possible to answer the question "So how should one divide division?", but you have to dig deep for Mr Partridge's answer.
+
+The editor of Webster's Third New International Dictionary (1976), the leading American dictionary, delivers an intensive explanation of his own word-division policy in the preface. Among lexicographers, he deserves a medal for the most serious attempt to categorize every kind of break-hyphen. Nevertheless, he feels forced to acknowledge his discontent that so many loose ends remain, including differences in the custom and practice of America and Britain. Not least, he is aware of the rather obvious speech differences which occur from one part of his vast country to another, as well as across the Atlantic. These variations clearly inhibit firm rules for phonetically based division. At one point you can hear the conscientious editor's quiet despair, as he groans: "Although unavoidable inconsistencies may be noticed in our divisions, no reader is apt to notice any at the right-hand margin. The showing of alternative divisions, or discussion of any division in any entry, is impracticable."
+
+Baffled they may be, but many printers in Britain have continued to follow the traditional path as best they can, at least until very recently. The perception of just what is is that makes a good word-break has been slowly weakening ever since the advent of computer-controlled composition (which at first was known only as computer-aided). The printer with inky fingers has now noticed that the philosophy of our institutions no longer seems fully adequate; worse, that there is no recognisable consensus. Unable nowadays to call upon the commonsense of the old-time comps, the Master Printer concludes that it is time for a change.
+Chapter 4:
+Errors that betray the printer's craft
+
+The current scene in the printing world is notable both for technical innovation and much improved economy of production, but shows a falling off in aesthetic quality and craftsmanship.
+
+It is one thing for the editors of a small English-language newspaper in South America (see below) to have problems in splitting words on their computer, but a very different matter when leading London newspapers are displaying ragbag word-breaks, years after the alleged success of the electronic revolution. Have they no pride in their products?
+
+From the Buenos Aires Herald, 7 July 1989: sk-ylab sa-ying wo-rried bi-llion unk-nown fo-llowing te-lephone airs-pace unrea-chable yoursel-ves legisl-ature (They were using a Spanish language program.)
+
+Of the 100 most used words of the English language only two are hyphenable: be-cause and peo-ple. At the end of 1989 THE SUNDAY TIMES was sometimes managing to get both wrong. Perhaps the management is leaving too many sub-editorial functions in the hands of reporters and feature writers, who are not accustomed to such responsibility.
+
+From THE SUNDAY TIMES: a few surprising specimens, autumn 1989 am-ong sm-acking str-angely ar-eas peop-le's alw-ays stro-ll brou-ght inst-ant mo-ved str-ongly bec-ause En-gland's politic-ization
+
+Another leading broadsheet, THE GUARDIAN, published a letter from Gloria Cigman, English Department, University of Warwick, taking them to task for "a hazard too horrible to contemplate: the sinister disruptive hyphen...where will it end?" Among the examples she quoted were: /loo-kalike/ une-lectable/ catchph-rase/. The editors responded with the headline GREMLINS NOT QUITE BROUGHT TO BOOK, which suggests that those old printer's devils are alive and well.
+
+
+
+THE INDEPENDENT shows a better crop of hyphens than most of the longer-established competition, but its justifying technique produces too many, and especially a surfeit of two-letter breaks. THE SUNDAY CORRESPONDENT, which later went out of business, was then using an American dictionary source which held many un-British examples calculated to disturb the native hyphen-twitchers, such as: /leg-end/ antic-ipate/ psycholog-ical/. Perhaps even good hyphens could not have saved the paper.
+
+Many other British publications cannot be too happy with their performance. The SLOUGH OBSERVER began electronic typesetting in the early 70s; as pioneers the editors could perhaps be forgiven their eccentric tendency to separate single letters, as in /p-olicemen/ and /c-ountryside/. At the time they bravely claimed that readers did not notice. To this day, however, there are plenty of British newspapers and magazines producing results which would win prizes for eccentricity:
+
+"They should know better" Department: confi-scated ch-anges se-arched fru-ity unsho-ckable imp-ortant pos-twar avo-iders res-prayed adv-antages der-egulator whe-re ever-yone cle-anest poig-nant distingu-ishing (THE TIMES) spi-noff (THE FINANCIAL TIMES)
+
+Newspapers sometimes plead the excuse of their pressing production schedules, but they do not expect to be excused from proper spelling, just because they are in a hurry, so why do they allow themselves to break words so recklessly? There are also many defaulters among academic houses and other leading publishers, who have even less excuse for abandoning the good practices which were once routine virtues. Best-selling hardback novels and biographies are too often displaying startling breaks such as: /magn-ificent/ do-esn't/ puzzl-ing/ be-ached/ male-volent/. The authors of these books must be unhappy; they may have little clout, but they should certainly make their feelings plain to Barabbas.
+
+Although the price of printed matter in Britain has kept ahead of inflation, the fact that such errors are a daily occurrence looks like evidence of misguided cost-cutting, or poor management practices. One has to ask: do modern printers and publishers actually read their own products?
+
+The crudity of some modern typesetting may be worse than that of the early 17th century, when compositors and editors were grappling manually and manfully with many more difficulties than we face today. Their style was idiosyncratic, but not hopelessly uncontrolled. GENT'S ENGLISH DICTIONARIE (1623), a collection of "hard words", includes such examples as: /pacificati-on/ a-rithmetician/ pa-ralogisme/. Not all of the "hard words" have survived, but the division problem remains. In spite of modern electronic magic, our automatically placed hyphens reveal that we have learned too little from the old-timers. Indeed we are still inventing new kinds of mis-prints, for the strangest breaks of all are created when a word-space has been inadvertently dropped out, leaving the computer to do its worst on the non-word combination which has appeared in the print-out. The result can be too dreadful to contemplate, or even to record.
+
+
+
+
+
+
+
+There were other enterprising early printers who exploited the uncertainty of English spelling to ease justification at the line-ending. When the line was not long enough to end at the word /dog/, they would put, according to length: /doge/ dogg/ dogge/ doggie/ doggye/. D.G.Scragg in HISTORY OF ENGLISH SPELLING, Manchester University Press, described how in the 16th century: "The letters i and y were often exchangeable, also y and ie, and y and ye. This led to a considerable variety of spelling, most helpful to the imaginative compositor: (examples are) /pity/ pyty/ pitie/ pittie/ pyttye/. The earliest printed books are justified in the manner employed by contemporary scriveners; a dash or tilde (wavy dash) was used to fill a vacant end-space...more satisfactory justification was achieved by varying the spelling. Words which had a variable length became very valuable to printers. In double columns (compositors) found themselves frequently obliged to alter their regular spelling habits TO AVOID DIVIDING WORDS at a line-end."
+
+Small wonder that it was only around 1700 that English spelling stabilized, largely due to the good and consistent work of a few leading printers. They converted the free-form diversity of authorial English, often self-indulgent, into the more disciplined language which Dr Samuel Johnson's famous dictionary (1755) helped to consolidate. It took another hundred years for standardized treatment of the apostrophe to be blessed by grammarians, and amazingly it seems that we are still waiting for the hyphen to settle down.
+
+A prescient view of the future of word-division was given by Henry Jacob, one-time columnist of the journal BRITISH PRINTER, in his book PRINTED ENGLISH (Sylvan Press 1950): "To an extent far greater than is often realized, the printer is the guardian of good English, responsible for minor details but still RESPONSIBLE. Officially this status has not, as yet, been accorded him, though many authors and other writers are grateful to the printer who has attended in this way to his business."
+
+Jacob's opinions, coming as they do from a man skilled in the art of printing, are a telling illustration of the way taste may change, but sometimes so slowly that the change is almost imperceptible while it occurs. Even while he was writing critically about American ideas, the author showed that he was beginning to see advantages in the transatlantic method of word-division: "American principles of division are so far quite unacceptable to British publishers and printers... (In a new American book THE GIFT OF TONGUES by Professor Magaret Schlauch)...the words are not divided according to any ascertainable principles. But all lines are evenly spaced, white lines and rivulets through paragraphs do not exist. Regular (he means British-style, Ed.) word-division has been sacrificed to obtain even spacing and far greater speed in composition, two distinct advantages. We should not underestimate the powerful influence exercised by America, both culturally and technically."
+
+The author then listed some examples he found in the cited book, "some acceptable, some purely American". Interestingly, Jacob did not find it necessary to offer better alternatives for the listed word-breaks, assuming that his opinions would be shared by the informed British reader. But today it seems unlikely that the modern reader will find anything even slightly offensive in the list (shown below). Times change, and hyphenating practices change too.
+
+    American hyphens listed in PRINTED ENGLISH (1950)
+
+    ac-count       de-veloped        at-tached       imi-tate
+    mat-ter        in-voke           fac-tors        bar-riers
+    fol-low        be-liefs          In-dians        Ger-mans
+    ges-tures      ac-cumulation     han-dicrafts    oc-curred
+    config-uration devel-opment      Eng-lish        be-tween
+    pic-tures      notori-ously      tran-scriptions impor-tant
+    natu-ral       pho-netics        repe-tition     unas-pirated
+    medi-eval      travel-ers        reck-oned       met-aphor
+    mod-ern        ele-ments         sim-ple         insidi-ous
+    ar-gues        ear-lier          orig-inate      Bib-lical
+    Aus-tralia     mys-tery          mutu-ally       lit-erally
+    ex-actly       ab-stract         audi-tors       coin-cidence
+    ambi-tious     suppli-cation     du-plicity      prob-lem
+    al-ready       Wil-liam          tapi-oca        Shake-speare
+    civil-ized     po-grom           bar-barous      ad-jective
+    termi-nation   sepa-rate         phys-iological  exam-ples
+    espe-cially    par-ents          ref-erents      re-fers
+
+Chapter 5:
+They seek it with thimbles, they seek it with care
+
+Orthoepy is the study of word pronunciation. Orthoeptists in search of the elusive syllable are the Snark-hunters of the world of words. Everyone is seeking it, but few are quite confident of how their prey should look, let alone how to be sure of avoiding a Boojum (in which case the seeker will "suddenly vanish away").
+
+Like Lewis Carroll's mysterious beast some of our syllables are striped and some are spotted, but the official dictionary version runs something like this: "A sound uttered as a single pulse of-the voice, a word or part of a word; the closest representation in phonetics for such a sound. A unit of language occurring in isolation."
+
+A linguist might define this as a morpheme, since it is usually larger than a sound yet smaller than a word. Some of the many and various configurations of vowel (V) and consonant (C) are illustrated below.
+
+    Some examples of English syllable construction:
+
+    V...............a in afoot, awash
+    CV..............de in deny
+    CVV.............hae in haemo-
+    CVVV............buoy in buoyant, moeo in homoeo-
+    CCV.............fly in flying, gra in graven
+    CCVV............free in freezing
+    CCCV............stro in stroll
+    CCCVV...........scree in screeching
+    syllabic C......rhythm /m/ sounded
+    ditto...........button /n/ sounded
+    CVC.............dot
+    CCVCC...........sport
+    CCCVC...........strut
+    CCCVCC..........splint
+    CCCVCCC.........sprints
+    CCCVCCCC........strengths
+    many variants
+    with diphthong..squawks, straight
+    VC..............er in singer
+    VVC.............ian in vulgarian
+    VCC.............ist in marxist
+    VCCC............irst in athirst
+    VVCCCC..........eighth (eighths)
+    (etc.,etc.......many more can be found by puzzle addicts)
+
+
+It is better that we should not get drawn too far into the subject of vowels and consonants, although they have a great deal to do with our problem. There are too many ambiguities and exception words that are difficult to fit into any comprehensible framework, such as words with invisible vowels, like /rhythm/ (two syllables seemingly, when you listen carefully) and words like /awash/ afraid/ above/. Here the starting vowel is that minimal sound known as the schwa or shwa, a word coming from the Hebrew, which language omits most vowels from its orthography. This is a fugitive, neutral sound, sometimes virtually non-existent. Fortunately we can disregard it at the start of a word, for English hyphenating purposes at least, as printing style does not allow a single letter to be separated. But when it occurs elsewhere there can be a genuine disagreement based on interpretation of the sound.
+
+    The syllable that silently vanished away
+
+    Jonathan Swift in 1712 published an open letter to the Lord High Treasurer of England, the Earl of Oxford (there was no Prime Minister then to write to). He complained to the highest in the land about the state of the language, demanding that something be done to stamp out the terrible new practice of pronouncing drudg-ed, disturb-ed, rebuk-ed, and fledg-ed as if they were spelled drudg'd, disturb'd, rebuk'd, and fledg'd. "By leaving out a vowel to save a syllable we form so jarring a sound and so difficult to utter that I have often wondered how it could ever obtain." In spite of his alarm and dismay, and even if the Lord High Treasurer was minded to listen to his plea, those terminal /-eds/ were gone for ever. And nobody (except a few perturb-ed poets) has ever missed them since.
+
+A commentator in the authoritative SEYBOLD PUBLISHING REPORT (USA) took exception to the break /bot-tling/ which did not "follow the way the word is pronounced (bott-ling)", and perhaps he can indeed find millions who agree with him. But the rest of us, with equal conviction, feel very sure that there is a tiny schwa between /t/ and /l/, which gives /bot-tling/. (Some of us are bat-tling for this point of view!)
+
+The vowel is supposedly (note how here -ed- survives!) the heart of the syllable, a distinctive sound escaping on a free flow of air from the complex mechanics of the vocal tract. The consonant is a sound released or arrested by self-programmed or articulated pulses of the breath. Thus in the word /bead/ there is a releasing /b/ at the beginning and an arresting /d/ at the end, but not necessarily of the same duration. There are other more elaborate articulations of the pulsed breath to produce what seem to be simple, single-syllable words, such as /streets/ and /screech/. Listening carefully to one's own voice slowly pronouncing words like /browned/ poignant/ anxious/ squelched/ reveals some rather complex happenings which usually go unnoticed.
+
+    Most of the meaning in English words is carried by the consonants, according to Dr A.S.Diamond, author of THE HISTORY AND ORIGIN OF LANGUAGE (Methuen 1959). This example has had the vowels removed, in the Hebrew manner, but leaves much recognizable information:
+
+       Frnds! Rmns! cntrmn! lnd m yr rs
+       . cm t br Csr, nt t prs hm.
+       Th vl tht mn d lvs ftr thm.
+
+    But the equivalent vowels are impossible to interpret:
+
+       ie oa ouye e e ou ea
+       I oe o uy aea o o aie i.
+       e ei a e o ie ae e.
+
+In fact, this is an extremely complicated subject, around which lively discussion has continued during the last 150 years. A suggestion of its complexity is given by a special symbolic language developed in the last century, which required 167 signs to describe all the sounds produced in human speech. Its successor, after many committee meetings, was the so-called International Phonetic Alphabet (IPA), which attempted to standardize the printed form of those sounds. The apparent success was short-lived; one after another, experts in various languages proposed more and more additions to improve the representation of unique sounds in their languages, until standardization "suddenly vanished away". Not one printer in Britain now carries a fully comprehensive set of the IPA (and probably not one in the world), but plenty of compromise character sets are in use.
+
+These mini-sounds, articulated without specific conscious controls, carry the spoken language as patterns formed in time. They obey their own conventions, which do not conform to the familiar conventions of the written language, expressed in marks and signs as visible patterns formed in space. Either kind of human perception can proceed independently, normally without hindrance from the other mode (although it is true that some readers vocalize every word inside their heads).
+
+Likewise there is a mismatch between what the academic linguists and the aspiring hyphenators expect from the elementary syllable. One man's acceptable word-break is the other's "unitary group suitable for further analysis". This is probably why lexicographers generate hyphen-points according to their background in phonological or morphological theory, but these choices may be inappropriate when it comes to the printing of their own learned texts. On the other hand, their hopeful readers (doubtless including compilers of electronic dictionaries) believe that any dictionary of word-breaks will automatically meet the expectations of the publishing industry. In reality neither is properly in touch with the printed end-product; they are sailing in little-known waters.
+
+The fact of the matter is that lexicographers believe in syllables only in an abstract way. When pressed, they have no convincing explanation about the practical usefulness of high-principled syllabification: "It helps the reader to pronounce the word" (showing some lack of confidence in IPA). One thing is certain: a lexicographer's every syllable is not a proper hyphen opportunity.
+
+    Pause for quotation:
+
+    "No really satisfactory theory of how the syllable is produced or how it is perceived has so far been put forward." Professor David Abercrombie ELEMENTS OF GENERAL PHONETICS Edinburgh University Press 1967
+
+The printer is looking for a hyphenable element of a word, easily recognizable and pronounceable, rather than a theoretical, minimal element. This is the reason why even in phonetic word-division, certain morphemes (prefixes, roots, suffixes, none of them invariably pure) survive strongly as recognised and preferred structures for the printed page.
+
+Thus /tele-phone/ is better than /tel-ephone/, so apparently satisfying the academic etymology while not betraying pronunciation. But the word /te-leph-ony/ (or even /tel/eph/ony/) is obliged to follow pronunciation, completely abandoning the familiar roots /tele/ and /phon/ although these will be used in other sound-combinations.
+
+These are fertile grounds for confusion, as has been noted. Thus Oxford's academic method prefers: phon-etics phono-graph phono-logy phon-eti-cian phono-lo-gist phono-graphic
+
+The first word seems reasonably "phonetic" in its readability, the second truly so, while all these examples exploit the roots /phon/ phono/. In this case the etymological principle is self-evident (but different examples might not be so obvious, because roots of English come from many languages). Also in these examples, printing conventions are observed, such as: Avoid carrying over single letters /-y/ or even two letters only /-gy/.
+
+Nevertheless the outcome is fundamentally unsatisfactory, because too often the examples are viewable rather than soundable. They do not "read well". For this reason alone we can expect that American readers would not be happy to see these breaks. The same words divided in American style (avoiding the two-letter /-gy/) look like this: pho-net-ics pho-no-graph pho-nol-ogy pho-ne-ti-cian pho-nol-o-gist pho-no-graph-ic
+
+In all cases the sound of the word is confidently described, even for the unsophisticated reader, and the divisions are consistent. But in every example the roots /phon/ phono/ are not controlling the decision. The principle is simple to understand, and it should make the reading process straightforward. It seems entirely appropriate to the needs of both printers and readers. Quod erat demonstrandum.
+
+When the two words are put directly into confrontation, it is hard to say that any genuine advantage is discernible between /phon-etic/ and /pho-net-ic/, although there is a slight advantage for the printer in admitting the terminal /-ic/ which is useful when it comes to splitting the common plural /pho-net-ics/. The terminal /s/ is occasionally the start of three or four punctuation marks, as in: /ics"),/ or even /-ics?")./.
+
+With the longer ending /-etic/ this would become /-etics?),/ which is a long segment in terms of the arithmetical process of justification. But, forgetting this cheeseparing, the ease of reading is valuable in its own right, and is more achievable by following the American principle.
+
+The fact that there is sometimes very little to choose between one break and another does not seem a problem that one should lose much sleep over. It would be tidy and nice always to be completely consistent, but the real test of a word-break comes at the point-of-sale: does the break meet the criterion of readability? If it does, within the understood conventions of the printer's approach, that should be good enough. Our complaint against slapdash printers and publishers is that by displaying hatchet-hyphens they are daily weakening the readability of printed English, drip by drip, in a gradual process of corrosion.
+
+The nub of the matter is that the most desirable aim of all is to avoid the REALLY BAD BREAK. For this no effort is too great, and loss of sleep may even be necessary. (Every conscientious printer has, at least once, found himself suddenly awake in the dead of night, shudderingly aware that some terrible solecism has been perpetrated in his printshop.)
+
+Division by sound meets all cases, without benefit of etymology. Adapted to the printer's convention by avoiding those hyphen-pointers which could mislead the reader, this method takes the "how it sounds" principle into new territory, "how it reads". There is a paradox here, which the printer has recognised and to which he has found his own solution, a solution from practical experience rather than from a rulebook.
+
+We have become aware that the word "syllable" means different things to different people, but since we are not concerned with the technicalities of linguistic science, we can phrase the basic question of word-division with simplicity. The question is this: which technique of word-division is most likely to be implemented with success in every circumstance? The answer must be the obvious one: split the word AS IT SOUNDS.
+
+The solution of the division problem should be left to the man on the spot, the down-to-earth, 20th century Bill Caxton. But he must be equipped with reliable means of implementing his special syllabic conventions. That is an area where the computer, if well instructed in hyphenology*, can indeed be a very useful tool.
+
+    Footnote:
+
+    hyphenology"The revival of enthusiasm for the aesthetic quality of the printed page was stimulated in the late 90s by the growing interest of non-professional printers in hyphenology." (A.Neill, Jr., Editor, Supplement No. 17, Sat-Sun Pravda-Times, 27 Dec. 1999) For holographic h. see 096/098786/0776 See also HYPHENOLOGY FOR THE D.I.Y. PERSON, British Electronic Printer Handbook 1998. (Nippon-OED 2001)
+
+Chapter 6:
+Dictionary division, is it harmless drudgery?
+
+The OXFORD DICTIONARY OF SPELLING (1986), which also shows word-breaks, is based on the British academic tradition, but the editor's introductory remarks do not entirely convince: "Where there is a well-established tradition of dividing a certain word, this has been followed, even when it is contrary to the other rules given here."
+
+This may be a case of one man's tradition being another man's broken rule. The dictionary shows many breaks which some printers feel to be arbitrary or outmoded, when compared with present-day practice in the printer's marketplace. Many of these examples differ from the recommendations of other Oxford dictionaries, such as the STUDENT'S (1978) and the ADVANCED LEARNER'S (1989), suggesting a philosophy which is still evolving.
+
+University Presses may find it especially difficult to cope with the penalties of rapidly-changing technology. There are hidden problems in maintaining a famous house style when technical surprises constantly break through. A typical if trivial variation occurs frequently, for instance, even in the same book, between /poss-ible/ and /pos-si-ble/, until it becomes hard to say what is "right" or "wrong". Similar feelings of bafflement are aroused by inspecting the dictionary products of other leading British institutions. (Alas, we do not have a British Academy of Hyphenation available for consultation.)
+
+The COLLINS GEM DICTIONARY OF SPELLING & WORD DIVISION (1968, reprinted identically in 1987) is based on the phonetic principle, although this is applied in a somewhat idiosyncratic way. There are 60,000 words in this little book, which students and printers have been accustomed to carry around. There is a conscientious printer in East Anglia who has carried the GEM for many years. He recently added the newer Oxford MINIDICTIONARY OF SPELLING (1986), finding room for it in another jacket pocket. When he came home one day, complaining of a headache,it was after finding /forc-ible/ in the GEM and /for-cible/ in the MINI; /sen-sible/ in the GEM and /sens-ible in the MINI; /apa-thy/ in the GEM and then again /ap-athy/ in the MINI. His wife confiscated the little books, and found that both authorities were in complete agreement on the word /cer-ti-fi-able/.
+
+The COLLINS GEM is phonetic, yet the large and also phonetic COLLINS ENGLISH DICTIONARY (1979) differs considerably from its stable-mate. It follows what seems to be an imported American headword list, and wholeheartedly embraces transatlantic principles of division. In fact, this dictionary blazed a trail for American influence, and probably speeded up British conversion to phonetic hyphenation, a process which is now being consolidated by the imported software favoured by leading journals and publishing houses. (Oddly enough, the second edition of the respected Collins no longer shows syllabic divisions.)
+
+It is remarkable that large institutional publishers, which Collins and Oxford are, continue to publish and sell in tandem seemingly authoritative language manuals which offer the public strikingly different solutions to the hyphen problem, indeed more solutions than anyone could possibly desire. To make a sporting analogy, if hyphenation were cricket, Oxford could send two stalwart openers to the crease: /sup-ple-ment-ary/ (MINI) /supple-men-tary/ (STUDENT'S) But the masterly bowlers from Collins could possibly win the day, with their clever googlies: /sup-plemen-tary/ (GEM) /sup-ple-men-ta-ry/ (COLLINS '79) Like medieval alchemists, each expert has his own unique solution. Quis custodiet ipsos custodes?
+
+    Comment: British & American dictionaries,
+    "Hyphens all over the place"
+
+    Variations of hyphen placement are illustrated below, drawn from both sides of the Atlantic; they indicate possible flaws in electronic look-up as a "perfect solution" to the hyphenation problem. Lexicographers find it easier to copy each other than to develop a rational methodology and stick to it.
+
+    KEY   + American                * English
+    1+ = Oxford American         6* = Collins 1979
+    2+ = Merriam-Webster         7* = Collins Gem
+             Third New Int.      8* = Oxford Student's
+    3+ = Reader's Digest                   (Hornby)
+             Universal           9* = Oxford Spelling
+    4+ = Remington Rand         10* = Longman Contemporary
+             (word list)
+    5+ = New Webster (Delair)
+
+    1+  =  ac-knowl-edge-ment     as-sis-tance     pref-er-a-ble
+    2+  =  ac-knowl-edge-ment     as-sist-ance     pref-er-a-ble
+    3+  =  ac-knowl-edge-ment     as-sis-tance     pref-er-a-ble
+    4+  =  ac-knowl-edge-ment     as-sis-tance     pref-er-able
+    5+  =  ac-knowl-edge-ment     as-sist-ance     pref-er-a-ble
+    6*  =  ac-knowl-edge-ment     as-sis-tance     pref-er-a-ble
+    7*  =  ac-knowl-edge-ment     as-sist-ance     pref-er-able
+    8*  =  ac-knowl-edge-ment     as-sis-tance     pre-fer-able
+           ac-know-ledge-ment
+    9*  =  ac-know-ledge-ment     as-sist-ance     pre-fer-able
+    10* =  ac-knowl-edge-ment     as-sist-ance     pref-e-ra-ble
+
+    1+  =  au-to-bi-og-ra-phy     veg-e-ta-ble     tem-po-rar-y
+    2+  =  au-to-bi-og-ra-phy     veg-e-ta-ble     tem-po-rary
+    3+  =  au-to-bi-og-ra-phy     veg-e-ta-ble     tem-po-rar-y
+    4+  =  --                     vege-ta-ble      tem-por-ary
+    5+  =  au-to-bi-og-ra-phy     veg-e-ta-ble     tem-po-rar-y
+    6*  =  au-to-bi-og-ra-phy     veg-e-ta-ble     tem-po-rar-y
+    7*  =  auto-biogra-phy        veg-etable       tem-por-ary
+    8*  =  auto-biogra-phy        veg-etable       tem-por-ary
+    9*  =  auto-bio-gra-phy       ve-get-able      tem-po-rary
+    10* =  au-to-bi-og-ra-phy     vege-ta-ble      tem-po-ra-ry
+
+    1+  =  ex-traor-di-nary       ri-dic-u-lous    un-u-su-al
+    2+  =  ex-traor-di-nary       ri-dic-u-lous    un-usual
+    3+  =  ex-traor-di-na-ry      ri-dic-u-lous    un-u-su-al
+    4+  =  ex-traor-di-nary       ri-dicu-lous     un-u-su-al
+    5+  =  ex-traor-di-nar-y      ri-dic-u-lous    un-u-su-al
+    6*  =  ex-traor-di-nar-y      ri-dic-u-lous    un-usual
+    7*  =  extra-or-di-nary       rid-icu-lous     un-usual
+    8*  =  extra-ordi-nary        rid-icu-lous     un-usual
+    9*  =  ex-tra-ord-in-ary      ri-dicu-lous     un-usual
+    10* =  extra-or-di-na-ry      ri-dic-u-lous    un-u-su-al
+
+(An apology seems to be in order, in case this degree of hair-splitting should given unintended offence. Reporting the details of more such hyphen vagaries may alert the attention of sensitive readers, intensifying their suffering. We plead the public good, while admitting that is really not cricket to give extra anxiety to hyphen-twitchers.)
+
+    Comment: The free-for-all hyphen policy
+
+    Because dictionary-makers claim to be descriptive rather than prescriptive (they report how the language appears to be, rather than how it "should be"), they have a laissez-faire approach to the hyphenator's problems.
+
+    Webster's NEW COLLEGIATE (1973) states: "It is all but impossible to produce a convincing argument that either of the divisions
+    /aus-ter-i-ty/ or /au-ster-i-ty/
+    is better than the other", while considering that offering alternatives would be "confusing to many".
+
+    But the arbitrary divisions often shown give no useful guidance in a general sense, thus not fulfilling the genuine expectations of the readers for authoritative guidance. Language does have a structure underlying its sometimes strange spelling and pronunciation, and readers recognise and appreciate the structure when it is used not randomly but sensibly, in hyphenating.
+
+    Sydney J.Landau in his book DICTIONARIES (Scribner 1984) suggested that the uncertainties of hyphenation and its poor execution in quality journals such as the TIMES LITERARY SUPPLEMENT and the NEW YORK TIMES did much to obscure sense and encourage poor writing habits in students.
+
+Another apparent convert to American methods is the long-established house of Longman. Professor Sir Randolph Quirk, in A UNIVERSITY GRAMMAR OF ENGLISH, devoted only two sentences to word-division, stating: "Natural breaks (orthographic, syllabic, morphological) are observed; thus establish-ment not establis-hment. BrE (British English) practice tends to favour morphological breaks (struct-ure), AmE (American English) syllabic (struc-ture)."
+
+This comment is difficult to interpret, and it is notable that the LONGMAN DICTIONARY OF CONTEMPORARY ENGLISH, over which he presides, gives /struc-ture/. The alternative /struct-ure/ can be found nowhere at all, proving as elusive as the Snark.
+
+American dictionaries are much more consistent across the board, but still exhibit many differences in their application of the phonetic method. Traditionally, reading primers for American children have shown word divisions as an aid to reading aloud, ever since the time of their founding father of lexicography, Noah Webster, who published the first "American Spelling Book".
+
+    Advice to 17th century hyphenators:
+
+    "Letters joined at the root must not be parted in the branches...These directions being thus uncertain for the English, leave we them to the Latin, whose they are, and let this one rule serve for all: Syllables are to be divided in spelling as they are in speaking, and so consequently in writing at the line's ends." BUTLER'S ENGLISH GRAMMAR (1633)
+
+Chapter 7:
+Hyphenation by computer
+
+The break-hyphen, both British and American,is not so robust as it once was, partly because of its propagation by untutored computers in the early days of electronic composition. These produced word-breaks by the million, but since they relied on elementary, even simplistic, algorithms they very often generated "idiot breaks". An early program was willing to place a hyphen after the third, fifth or seventh character in any word. This is better than having no policy at all, but is more like Russian roulette than hyphenation.
+
+An algorithm is a series of step-wise operations, finite in length, designed to achieve a specific function. One example could be the process of long division. Since everything is already known that can be known about long division, success is quite easy to judge. But in the case of hyphenation there has always been a basic weakness in the proper definition of the end-product.
+
+When computer composition first became economically possible, 25 years ago, the small firm of Compugraphic Inc. (later absorbed into Agfa) was an ambitious newcomer in the type-setting field. They started with a machine known as the Linasec which processed an endless "word-string", keyboarded as paper tape, into Linotype hot-metal casting machines. Lines were automatically justified by arithmetic until the machine was stumped for a suitable line-ending, whereupon it displayed the word to its operator, requesting a human decision on the hyphen-point.
+
+Hot Metal Typesetter
+
+
+
+
+
+The company subsequently introduced a hard-wired computer as controller of a low-cost phototypesetting machine. This brought the new technology to the "Mom and Pop" printshops of rural America. It was a remarkably good machine, but it dismembered words ruthlessly when they overran the line, giving rise to the story that a bible publisher in the Rocky Mountains had sent back his new machine since it persisted in hyphenating God. The story may have been true and connected with the installation of a wrong logic card; we have recently seen G-d quite routinely appearing in a Jewish newspaper, which is not unlike the practice of avoiding the spelled out name of Jehovah (or YWVH).
+
+Today system performance is vastly improved. Very elaborate algorithms have been developed (such as HYPHENOLOGIST, introduced in 1985), which can seek out virtually every good hyphen-point. The principle is to recognise all possible character sequences which can occur within a word, and match these against criteria for hyphen placement. Notionally there is a finite number of possible letter combinations in a specified language, and thus a complete solution to hyphen location is available. The proviso in the word "notionally" is because in another sense language is infinite. Every language is dynamic, constantly developing new forms, in modern times mainly by absorbing and adapting words from other languages.
+
+An alternative method, also widely used, is to compile large lists of words, with every approved hyphen-point marked, and store the information on a hard disk. This is electronic look-up, which sounds like a simple and attractive solution. In fact, there are many pros and cons to be considered, partly because of the inherent complexity of the hyphen requirement but also because of technical considerations.
+
+In Britain, the ECONOMIST used such a look-up system 15 years ago, adopting at first an excellent list of 100,000 words which had been developed by John Seybold, originally for the US News, and subsequently for Atex and other American systems. It is noteworthy that not only did John Seybold decide to develop his own approved list, but over a period of several years the ECONOMIST also created its own special list. Experienced composition hands are never satisfied with the lexicographers' approach; they maintain their own lists, and update them frequently. ("I must invent a system, or be enslav'd by another man's," wrote William Blake.)
+
+The Seybold list also introduced for the first time qualitative markers, assigning a value to every word-break. It must be mentioned that there are much less good ad hoc lists in existence, known as "corner drugstore dictionaries", since you go to the corner, buy a dictionary, and type it in warts and all.
+
+The phrase "total dictionary solution" has often been used by systems vendors to encourage the idea that an authoritative dictionary of perfect word-breaks would completely solve every problem. Unfortunately no such dictionary exists, and the so-called total solution is not available. A leading supplier, Autologic, recognises this by keeping four dictionaries of English for European customers; they are all reasonably good, but they are incompatible and cannot be merged. What this small library does provide is successive alternative solutions should a customer find the first (second, third) not entirely satisfactory.
+
+Recently the leading British newspapers, most of which were late converts to electronic setting, have swallowed various dictionaries in single gulps without fully considering the implications of the change for their production style. The DAILY TELEGRAPH, a trifle nettled by readers' comments, thought it wise to explain something about hyphen philosophy to their loyal readers. Other newspapers preferred not to draw anyone's attention to stylistic problems.
+
+Results continue to improve, but there is still difficulty in making dictionary look-up sufficiently comprehensive; no sooner has /sta-keholder/ been picked up than the word /unith-olders/ demands attention. An American collegiate dictionary typically contains about 75,000 words, as does a comparable British product such as the CONCISE OXFORD DICTIONARY. If inflected word endings are added, as the computer requires, the total can easily double. Even at this level, which has some penalties in the system's housekeeping, the dictionaries still omit many words of the kind which lexicographers regard as obvious or trivial, although such words may be quite popular with the public and journalists. A strike may suddenly highlight /ambulanceman/ ambulancemen/ ambulancemen's/ and feature articles suddenly have a rash of /supercomputers/. For the first time editors realise just how many weird unlisted words are buzzing around their news rooms: mediaspeak, uncreditworthiness, narcotraffickers, midtermitis, injuncted, deutschemarks, unmanipulative, magnetohydrodynamics, yuppydom, nomenklatura, catenaccio, hippylike, indissolubility... all of which are very unlikely to succumb to instant look-up.
+
+When THE INDEPENDENT newspaper ran a large feature on nutrition, without having words like /polyunsaturates/ polyunsaturated/ in their electronic files, the result was that large wordspaces showed as obvious and unsightly blobs of white, scattered across the page; under publication pressures there is simply no time to rejig the system.
+
+System designers at Wang Computers have been successful exploiters of the electronic dictionary, but they have been surprised to find how the number of listed words continues to rise, remorselessly. In the case of German, an agglutinative language where it is quite normal daily to coin new compound words, Wang started out with 150,000 words, which proved far too few. They sought assistance from a German university and were stunned to be offered 850,000 words. Eventually this total was scaled down to 390,000, but not without considerable effort. Interestingly, English is reputed to have even more words than German, in total possibly as many as 1.25 million. (Shakespeare used only 14,500, or thereabouts, while Dr Johnson had 41,000 in his dictionary.)
+
+Scanning a very long word list can be quite a surprising experience for the average reader. He may pass over 100 or more words before he finds even one he can recognise. This suggests that there is considerable inefficiency in storing such voluminous records, since they are usefully accessed only on very rare occasions. There are data compression techniques which can improve the efficiency, an approach taken by Microlytics Inc. in America. The words are specially encoded, reducing the storage requirement, but the retrieval and reconstruction processes still take extra elements of time.
+
+    Example from a long word list:
+
+    ly-ceal, lych-nic, lych-nis, lych-no-man-cy, lych-no-scope, lych-no-scop-ic, ly-cian, ly-cid, ly-ci-dae, ly-cium, ly-codes, ly-co-di-dae, ly-co-doid, ly-co-pene, ly-co-per-da-ceae, ly-co-per-da-ceous, ly-co-per-dales, ly-co-per-doid, ly-co-per-don, ly-co-per-si-con, ly-co-pin, ly-co-pod, ly-co-pode, ly-co-po-dia-ceae, ly-co-po-dia-ceous, ly-co-po-dia-les, ly-co-po-dium, ly-cop-si-da ly-cop-sis, ly-co-pus ly-cor-ine, ly-co-sa, ly-co-sid, ly-co-si-dae, lyc-tid, lyc-ti-dae, lyc-tus, ly-cus, lyd-dite, ly-dia.
+
+Within any computer system, there is a price to pay for the proper organisation of such large word lists as may seem necessary. In a European context, where it is often necessary to mix languages, there are extra system penalties for this juggling with multi-lingual dictionaries; they are likely to be a thoroughly unwieldy additional overhead on top of the many problems of composition.
+
+Back in the 1960s, when IBM obtained a patent for a method of automatic word-division, people in print were impressed that it specified 64 kilobytes (64K) of memory for this purpose alone, at a time when whole composition systems ran on a meagre core of 4K or 8K. Today spelling checkers and hyphen-generators are demanding megabytes (Mbytes). The Ventura system introduced an advanced hyphen dictionary requiring 3Mbytes, considerably more memory capacity than most desktop publishers/printers require for a total system. To avoid cumulative delay occurring during later editing and rejustification, a new text is normally hyphenated when first read into the system, so that all words carry "soft" hyphens (invisible markers which can be used for new line-endings whenever necessary).
+
+By contrast, a good algorithmic method requires very modest memory resources (perhaps 50K), is much easier to manage, and yet can still enjoy the flexibility of an economical and manageable exception list. Technical subjects such as chemistry and medicine can be made the subject of subsidiary lists, for use with appropriate texts.
+
+By adopting a common interface, it becomes a practical proposition to mix two or more languages within a page, and even to mark individual words or phrases from a different language occurring within a main text, as happens in scientific and academic copy. This solution is economical not only for printers but also for all originators of print. They can retain control of the word-division of texts which they publish, and avoid the re-proofing of poorly hyphened work, by inserting discretionary or soft hyphens which will have priority of execution over a contractor's own software.
+
+A powerful hyphen algorithm uses a large number of rules (over 16,000 in the case of the HYPHENOLOGIST program for English/American) to navigate through an elaborate hierarchy of logical choices, arriving at the preferred break-points for whatever word is delivered from the basic composition system. The method can be thought of as a kind of pattern matching. Patterns of the possible letter sequences of the language are used in combination with tables of word beginnings and endings; these are loosely called prefixes and suffixes, but in all cases they may be sometimes soft and sometimes hard, i.e. variable or not according to the character sequence which follows or precedes. There are a great many conflicting sequences in the language, which are taken care of by logic.
+
+An inexpensive computer (e.g. 8088) normally returns the word to the composition system within 20 to 50 milliseconds. The processed word carries a marker for every possible hyphen-point, and each marker carries a "goodness factor" from the range 1 (avoid), 2 (not recommended) through 3/4/5 (adequate to good), and 6/9 (excellent).
+
+The speed of execution depends on the hyphen complexity of individual languages. In linguistic efficiency, English conveys most meaning with fewest syllables, but its spelling complexity makes it the most difficult language to hyphenate. German and the other Nordic languages are also very complicated in structure, while the Slavonic tongues are much less so. The Romance languages are relatively simple and can therefore be processed with maximum speed. Every language has unique features, but the treatment is standardized so that all remain compatible with one another and with the common interface.
+
+Extensive testing of the program against random word lists, showing all possible "authority" word-breaks, demonstrates the success of the algorithm. This is typicallly 98 or 99 per cent on the lists used, which does not necessarily guarantee identical success on any one particular document. It does, however, statistically reduce the risk or a poor hyphen to an extremely low level. Performance can be further enhanced by adding to the short exception list which is already built in to the system. In particular, the ability to customize special word-breaks is valuable to individual composition houses, which are likely to have their own preferred house style for local place and person names. The latter are very unlikely to be found either in authority lists or in electronic dictionaries.
+Chapter 8:
+In search of some principles
+
+We have seen that lexicographers who tried to prescribe good examples of word-division failed to develop a convincing and consistent philosophy. Partly this has been because of their uncertainty as to the desires and purposes of the average dictionary user, and perhaps their lack of interest in the printer's problems, but it is also because of subtle technical conflicts within language technology. One expert's morpheme may be another's phoneme, causing theories to confuse and conflict.
+
+The printer, however, is not a purist or theoretician, but a practical man. He sees too much uncertainty in etymology and technical phonology. His printed product has to be delivered next Thursday, looking good, reading well, and properly packed in brown paper. For a sure method of solving the hyphen problem his best course is to rely on the universal experience of all users of a common language: pronunciation.
+
+Since linguistic technicalities do not remove uncertainty, the printer should trust his own perception of the spoken language, and his own recognition of the sounded syllabic parts of words. He should be his own expert in choosing specific word-breaks which minimize interruption of text flow, within the constraints of line measure and the nature of the job. Such breaks need not necessarily be totally consistent, within an artificial scheme, so long as they are always "acceptable".
+
+By analysis of what the skilled printer knows and how he acts in various circumstances, an expert system can be developed to enable the computer to perform these functions automatically, providing an improved aesthetic element to any basic composition program, with high reliability. This special know-how is the heart of HYPHENOLOGIST, a program designed to assume the function of an authoritative expert hyphenator.
+
+Because local custom and practice varies in the way printers handle English in Britain and America ("Two countries separated by a common language," said George Bernard Shaw), options must be available in the system; but to a very large degree the philosophy will be identical for both British and American usage.
+
+Chapter 9:
+Dividing English words, the general precepts
+
+The first precept:
+
+    Divide so that each part of broken word can be pronounced correctly at sight.
+    Certain letters read easily in combination, but awkwardly apart. tele-vision NOT tel-evision mini-com-puter NOT min-icom-puter lady-like NOT la-dylike
+The second precept:
+
+    Secondly, identify and rate "natural breaks".
+    Some hyphens are much better than others, but the printer has a technical problem setting to narrow measures. He prefers "excellent" but may have to settle for "acceptable".
+The third precept:
+
+    Choose the best break for the circumstances.
+    The quality standard is not necessarily always the same, but aspiring to excellence is the mark of a worthy successor to Gutenberg.
+
+The practical details:
+
+    Don't hyphenate a word which sounds like one syllable:
+    weight twelfth strength walked through aisle played streamed straight combed flinched squelched
+
+    Good practice avoids splitting some common words:
+    abroad adrift often after across always
+
+    Don't separate one letter starting or ending a word:
+    against elate above around vid-eo flashy evicts avert ozone asex-ual amount asleep
+
+    Two-letter carry-overs are best avoided:
+    movie lanky rar-ity lax-ity eighty al-ready mangy
+    (including all /Ce/ endings, but see point10)
+    ap-prove ap-prise de-cide over-come in-flame eti-quette braille lug-gage abridge di-vulge
+
+    Plurals in /ies/ are normally splittable:
+    mov-ies fan-cies eight-ies wor-ries jour-neys
+
+    Usually allowable is /-er/ (agent-indicator), also /-er/ as the comparative form of adjectives:
+    farm-er small-er great-er slack-er larg-er keep-er start-er break-er share-hold-ers But note: swim-mer law-yer debt-or cred-i-tor ac-tor big-ger for-mer por-ter di-rec-tor mer-ger
+
+    The vowels are a e i o u and usually y. A syllable will contain one, two or three. Break according to the sound, either between two or more consonants, or (possibly) take over a single consonant (eg. mo-saic but mis-ery). Avoid breaking if two consonants form one sound in normal pronunciation (e.g. ad-dress, but bed-rock).
+    mas-ter poll-ster cen-tury mys-tic mys-tery vis-cous de-scent dis-cuss bud-get dis-be-lief roy-al low-est ana-lyse ob-late fa-bles be-ware no-where in-spire re-cline ex-press fash-ion an-thrax post-pone at-tract re-tract
+
+    Preceded by a short vowel, a single consonant will usually cling to its vowel, remaining at the line-end:
+    (short vowels) com-edy fin-ish nov-elty mod-els wid-ows liv-id del-i-cate stip-u-late van-ity mol-e-cule
+    (long vowels) fi-nal no-vo-caine mo-dem wi-dened mo-lest-ing li-ven sti-pen-diary mo-tive bi-cy-cle de-reg-u-late
+
+    Normally divide double consonants (but see /ing/, para 15)
+    dif-fi-cult ap-prox-i-mate ap-proach bet-ter rob-bery flam-mable in-suf-fer-able
+
+    Para 4(/Ce/) applies when a whole word occurs with affixes:
+    prize-worthy dare-devil re-place-able over-care-ful
+    With added /s/ some are correct but not all (avoid /-es/):
+    scribes pla-ces grades pri-zes car-ria-ges usa-ges strives styles gau-ges fe-males ob-scures tea-ses
+    Similarly don't separate these pairs when followed by /e/:
+    ch, sh, th, sl, ll... st, rs... ns, ps...lv dg, rg... lg, ng... nc, ff
+    niche swathe tithe paste large budge gorse merge gaffe ounce purse lapse lisle bulge
+    But the following endings are acceptable:
+    hur-tle si-dle sim-ple peo-ple ca-dre mi-tre un-cle tim-bre na-cre rub-ble nim-ble ri-fle ter-ri-ble
+
+    Divide V-V only when the vowels are sounded separately:
+    cre-ate per-me-ate con-cili-ate cli-ent meat-i-er crea-ture cha-otic ar-du-ous-ly sci-ence con-science
+
+    Avoid splitting off two vowels at the start:
+    eagle eider-down aero-plane auto-graph
+
+    /ck/ always takes hyphen after (but not with /cked/):
+    black-en dock-yard tick-ets trick-ling mick-ey blacked tricked suck-ers backed reck-less
+
+    The following CC pairs are normally not separated:
+    br, cr, dr, fr, gr, pr, tr, wr, bl, cl, fl, gl, pl, sh, st, sp, sc, dg, bg, rh
+    Other special cases:
+    ps, gn, pn, pt (but not always)
+    Also some CCC triples are not usually separated, notably:
+    chr, phr, thr, spr, tch, chl, phl, spl, sph, ght.
+    But these firm exceptions are always split:
+    b-br, c-cr, d-dr, f-fr, g-gr, p-pr, t-tr, b-bl, c-cl, d-dl, f-fl, g-gl, p-pl, t-tl, z-zl.
+    Importantly, CC and CCC may split when a stressed short vowel precedes, but not always:
+    de-scribe afraid anach-ro-nis-tic os-prey ogre-ish at-mos-phere pyr-eth-rum aph-ro-dis-iac itchi-ness mis-tress trick-ster sup-ply min-is-ter frus-trate across ac-ro-bat re-spect re-splen-dent met-ric budg-eted judg-ment as-tro-naut as-tron-omy cal-i-brate type-writ-er chil-dren dep-re-da-tion mad-ri-gal mac-ro-biot-ic mi-crobe mi-cro-light light-en manu-script trans-ceiver ra-diog-raphy pho-tog-rapher de-moc-racy auto-cratic de-sign-er pug-na-city preg-nant ma-lign-ing forth-right birth-right earth-shine
+
+    Compounds should wherever possible be divided according to their component parts:
+    bath-room catch-phrase hemi-spheric spread-sheet match-maker full-fledged aero-space bee-keeper beef-eater
+
+    If consonant plus /ed/ does not make a sounded syllable, do not separate:
+    les-sened lis-tened lapsed turned missed packed whined re-newed fol-lowed rum-bled grap-pled rug-ged bat-ted traced den-ted filled strained re-freshed grinned wheezed.
+    But sometimes /ed/ endings are allowed to split double consonants to avoid inconvenient word length:
+    equip-ped fore-stal-led strip-ped whiz-zed
+
+    Some endings are robust and unchanging (with very rare exceptions):
+    mad-ness wit-ness lion-ess drag-on-ess vague-ness god-dess gruff-ish star-fish small-ish es-tab-lish
+
+    The suffixes
+    /ing/ able/ ible/ ably/ ibly/
+    usually split by convention rather than sound. But note special cases (soft /c/ and /g/). Divide between doubled consonants when adding /ing/ except after short whole words like /add/ fill/ bill/ etc.
+    sing-ing sell-ing plan-ning set-ting awak-en-ing crack-ling jam-ming han-dling whis-tling say-ing de-du-cing ra-cing prais-ing rag-ing aver-ag-ing ach-ing tell-ing abas-ing min-ing chang-ing icing man-ag-ing judg-ing list-ings warn-ings add-ing load-ing bid-ding end-ing fi-nan-cing en-abling amus-ing tim-ing dial-ing adapt-able usa-ble for-ci-ble like-able re-li-ably fit-ting-ly.
+    Note these:
+    syl-la-ble pos-si-ble tan-gi-ble Stylists may prefer to avoid the following: do-ing go-ing go-ings-on be-ing be-ings
+
+    Many other endings have multiple forms, or may be overridden by preceding CC (or by soft /c/ or /g/):
+    frip-pery rud-ery scul-lery rowd-ily legend-ary mud-dily ar-son-ist eulo-gist canoe-ist exem-plary an-gli-cism hero-ism bap-tism bot-u-lism al-co-hol-ism op-ti-cian clin-ician
+
+    It is better not to split such endings as:
+    end-ed does-n't tax-es (unacceptable)
+    Some two-letter suffixes are inoffensive and useful:
+    safe-ly sure-ly lique-fy paci-fy poet-ic
+
+    Do not hyphenate words of less than five letters:
+    baby doer goer amid away wiry onto into
+
+    Do not split if the result is easily misread:
+    sources (but re-sour-ces is acceptable) on-ions un-ion-ize coin-cide (all poor) onions union-ize co-incide (satisfactory)
+
+    A single /r/, also /x/, usually remains attached to the preceding vowel:
+    par-ent-hood gen-er-ally pur-ify par-ity fix-a-tive
+
+    Two letter word-starts left at the line-end are not good, unless obvious prefixes:
+    un-derfed re-alized ar-rested af-terwards (all poor) under-fed real-ized arres-ted after-wards in-tact im-prove ad-dress en-trance (all good)
+
+    Avoid division of prefixes, where possible:
+    mega-byte micro-com-puter super-cargo ante-date anthro-pol-ogy (or) an-thro-pol-ogy
+
+    Some words have two versions:
+    pre-sent pres-ent re-cord rec-ord de-sert des-ert
+    The stress (and context) decides both meaning and split. Such words can be put in unhyphenated form in the exception list. Other breaks conform to eccentric English spelling and custom;
+    others can show possibly-offensive line-ends:
+    is-lander ear-lier in-dict-er as-sign-able as-sig-na-tion ther-apist thera-pist.....but not the-rapist ana-lysis (avoid anal-) ar-senic (avoid arse-)
+    Half a century after Hitler newspapers still print Naz-ism or Na-zism, but Nazi-ism is preferred.
+
+    Do not divide initials, acronyms, etc:
+    RAFVR UNESCO SWAPO
+
+    Proper names may have to be split: (be bold!)
+    Shake-speare Ports-mouth Mar-seilles
+
+    If possible, avoid breaks showing at consecutive line-ends.
+
+    Avoid a division, if possible, which adds another hyphen to a word containing a link-hyphen.
+
+    Avoid a break on the last word of a paragraph.
+
+    Avoid a break on the last word of a page; also avoid a short single line at the top of a page or column (this is a widow).
+
+Chapter 10:
+The hyphened word
+
+Many words entered the language by first being joined together by a link-hyphen, which created a new compound word. With the passing of time most of these words became fully assimilated, eventually (but not always) dropping the hyphen.
+
+The following words occurred only once in Shakespeare's works, printed with link-hyphens, and all passed smoothly into the language: tear-ful blood-thirsty bed-room gentle-folks dis-agree out-break tear-stained earth-bound. Others failed to make the grade, such as: temple-haunting (Macbeth) and cloud-kissing (Lucrece). The successful words may have been happy inventions of the moment, fruits of bardic genius, but we might suspect that sometimes they were already established, or had been overheard by the playwright in his favourite hostelry.
+
+When Samuel Pepys was writing his diary, "every body" was two words, still awaiting either a link-hyphen or the moment when two words would suddenly be one. This process is never-ending; in particular the creation of new words is intense in America, where the link-hyphen is speedily dispensed with. Space-suit and moon-walk probably dropped their hyphens in the second edition of the newspapers which reported them.
+
+This poses another kind of problem for the printer, since many people will be uncertain whether a particular link-hyphen is necessary, and be inclined to leave it out. Nobody is likely to revive the hyphens in common words like newspaper and postman, which once were innovatory, but it is more difficult to judge modern words such as antitoxin, coaxial and coexistence. Except where there is a grammatical reason, or where the meaning could be obscured, writers may consider it safe to leave the hyphen out, perhaps posing a problem for the computer. Sir John Murray, editor of the massive OED (grandmother of every subsequent English dictionary), gave examples of meaning confirmed by the hyphen: "a day well remembered" but "a well-remembered day" "a sea of deep green" but "a deep-green sea"
+
+Fowler's MODERN ENGLISH USAGE offers: "an infallible wrinkle-remover" "the ex-Tory Solicitor-General for Scotland" (i.e. the Solicitor-General who formerly was a Tory) ne'er-do-well; stick-in-the-mud; what's-his-name
+
+This is an open-ended subject since users of English feel free to innovate (so to speak) on the hoof. The link can be useful to avoid ambiguity: re-form (=form again) as against reform (improve), and re-signing a document as against resign an employment. There are thousands of significant examples, some of them already challenged and proven in courts of law.
+
+In earlier times the hyphen was often pressed into service to solve orthographic needs, producing some strange oddities in the process. In jury records of 1658 the Puritans' elaborate compound names are graphic descriptions of their personalities, e.g. Search-the-scriptures Morton might serve beside Strong-in-the-faith Jenkinson. Their names may have been inspired by colourful long names in the Bible, such as Maher-shalal-hash-baz (Isaiah VII i)
+
+British aristocrats are still fond of their double and triple-barrelled names The Lady Caroline Jemima (1858-1946) had a five-barrelled one: Temple-Nugent-Chandos-Brydges-Grenville. A modern daring explorer, much in the public eye, is Sir Ranulf Twisleton-Wykeham-Fiennes.
+
+The most prestigious and valuable hyphen in business history was probably the one invented by a Mr Royce when he joined the company which had started out as Rolls & Co. He suggested to his new partner that they should call the business Royce-Rolls, but in 1906 they eventually chose Rolls-Royce, which became the world's most famous trademark. In 1977 a play was put on in London's West End: Rolls Hyphen Royce.
+
+Noah Webster
+
+The American Spelling Book of Noah Webster
+
+
+
+
+Chapter11:
+American hyphenation practice
+
+The "Almighty Dollar" is increasingly making itself felt in the UK and throughout the world. The continuing purchase of American software by English newspapers is leading to American Hyphenation practice becoming the norm in the UK. The American newspaper practice is lead by "The Associated Press Stylebook" which recommends "Websters New World Dictionary, Third College Edition; Simon & Schuster Inc, New York. We consider the hyphenation points shown in this work to be the most consistent of all the American Dictionaries. Hyphenologist has now in 1994 made the English and American Modules almost identical, and based the above work and a common Algorithm.
+
+Although American practice is firmly based on the phonetic principle, the traditions of American printers are sometimes different from those of their British colleagues who have already changed to phonetic division. These are some of the specific differences:
+
+    American custom allows the sounded ending /-ed/, for instance after /t/ and /d/. Britain once did the same; books produced by Eric Gill at the Aldine Press in the 30s showed /limit-ed/ divid-ed/ print-ed/ etc. Modern British practice is happy also with /wick-ed-ly/ un-doubt-ed-ly/.
+
+    Similarly the ending /-es/ is allowed in newspaper usage.
+
+    Two-letter endings are very common:
+    arous-al nas-al ana-lyt-ic es-thet-ic in-her-it
+
+    The agent-indicator /-er/ is normal (now being increasingly adopted in Britain).
+    strang-er rac-ers danc-er ro-manc-er (but also gro-cer)
+
+    In America the soft /c/ is usually not significant, and the soft /g/ never.
+    doc-ile de-duc-ible crit-ic-ized leg-end log-i-cal (BrE do-cile de-du-ci-ble crit-i-cized legend logi-cal)
+
+    There are other cases where differing pronunciation produces different divisions:
+    AmE de-bris ze-nith si-mul-ta-neous BrE deb-ris zen-ith sim-ul-ta-neous
+
+HYPHENOLOGIST is capable of coping with either American or British practice. Word-divisions which are doubtful, and potentially avoidable, can be marked with a low "goodness-factor" of 1 or 2, and thus be excluded unless forced justification is necessary.
+
+Give me a break for once will you
+
+    When it comes to hyphens, Maurice Weaver finds that his opinions are divided, and not without some justification, dash it all
+
+    THE HYPHEN and where to put it has traditionally provided one of the more fractious challenges of journalism. The pit-falls are legion. Sorry, pitfalls.
+
+    Does that imaginary county family,  the Withering-Smythes of Sheepy Magna, hyphenate or not? Is it teaset, tea-set or tea set? And at the line's end should it be chil-dren or child-ren?
+
+    One of the benefits of switching from typewriter to word processor is that the last of these brain-teasers - the little matter of how to break a word at the end of a line - has been removed from the writer's discretion. The computer
+    sorts that out in the interests of getting the columns straight-edged and, as they say, justified.
+
+    But who teaches hyphenating techniques to the computer? And is it being done according to the rules our school-teachers used to instil? The art of the hyphen has been an under-rated skill, and it has taken a few computerised hash-ups to make us realise that fact.
+
+    In the microchip age, where ma-chines have to do automatically what the human mind did by common sense, such matters have become the subject of deep thought and professional specialisation. Ronald McIntosh of St
+    Albans has become a hyphenologist (his word; it's not in my Concise Oxford Dictionary) and he has gone into business as such.
+
+    Computer Hyphenation Ltd is a company producing software to instruct computers in how to use hyphens properly. All word processors will use hyphens, chopping up words like salami to ensure that they fit. The cut is
+    not made at random. They respond to rules built in by programmers, and sometimes in more sophisticated installations they consult built-in electronic dictionaries.
+
+    Some systems are better than others. A really oafish computer can present a carve-up that is eccentric, even hideous - a lexical massacre to make the purist wince. Even some quite smart ones can get caught out by the unexpected.
+
+    The canny old-time compositor would use his experience and his sense of what is aesthetically acceptable. But computers are never cunning - only as good or as bad as their software.
+
+    McIntosh's new programme, called Hyphenologist, is designed to impose a bit of discipline where it is needed. It can do it in 27 languages, including some pretty obscure ones like Afrikaans, Esperanto, Serbo-Croat and Welsh, instructing the gremlins where they are permitted to break a word and where not to.
+
+    Its creator was once a News of the World reporter in Glasgow, so his expertise in this sphere of computer literacy might come as a surprise to those who thought NOW men never used words of more than two syllables. He went on to become features editor of a Fleet Street Press agency before diverting into the sphere of lithographics and typesetting and from there into the technology of the electronic word.
+
+    Today multisyllabic words are the very stuff of his business. Mclntosh's programmes provide a series of what he refers to as "word-split algorithms," meaning hyphenating rules, which can be applied to existing computer systems. They cover 36,000 English words of five letters or more. Where, for example, would you split words like representational or strategically.
+
+    Interestingly, your answer might depend on which side of the Atlantic. you hail from. For the most part, McIntosh says, Britons like their words broken on the basis of etymology (their formation or meaning) and long-stand.
+    ing tradition. Americans, on the other hand, favour following the sound and stress of the spoken word, although they are not entirely averse to tradition.
+
+    So it might be representational in America because that matches the syllabic divide, but representational in Britain in recognition of the Latin origin of the word (representare). Similarly an American would prefer strategically, which McIntosh says bequeaths an unstylish and odd-looking half-word to the line below. He would prefer the more classical British strategically.
+
+    The range of programmes embraces what are termed English (traditional) and American (phonetic), which adds another angle to that old adage about our being two nations divided by a single language.
+
+    "In Britain," says McIntosh, "American influence is now very strong because of the numerous American systems installed by influential users, which are principally the leading newspapers." He finds it disturbing that
+    leading British publishing houses continue to let our transatlantic cousins get away with this.
+
+    The simple priority is to get the text looking neat and shipshape with no word-splits that mislead, jar the eye or distract the reader.
+
+    As to whether or not to hyphenate the Withering-Smythes, Mclntosh's system can't help. You'll just have to consult your Burke's landed Gentry.
+
+ Reproduced by kind permission of the Daily Telegraph
+Chapter 12:
+Hyphenating other Languages
+
+The Hyphenologist program is capable of dividing words not only in English but also in many other languages, principally those spoken in Europe. A generalized system of simplifying the many alphabets, in transliterated form, makes it possible to mix languages which seemingly have little in common. Special character substitutions are used internally in the word splitting subroutines, and occur in some of the examples shown below. (In general, accented characters have no effect on hyphen rules.) The normal orthography is restored when words with flagged hyphen-points are returned from the hyphenation loop to the user's own composition program.
+
+Almost all of the languages listed below have special or even unique requirements for their proper word-division, relating to historical usage, to certain character combinations, or to peculiarities arising from agglutinative and compounding practices.
+
+The world is converting into the proverbial Global Village at an alarming rate, and the languages of the world are, for good or ill, slowly becoming one. American English is the predestined winner. OK (okay) and Coca Cola are already first and second in the world-wide recognition stakes.
+
+A symptom of this merging process is the number of American loan words which are appearing in all non English languages. The heroic efforts to stem this tide, by the Academie Francaise and similar nationalistic institutions, are largely in vain. The Academie has scored some notable victories, such as: AIDS repelled in favour of SIDA NATO surrendering to the French OTAN (but only because these are acronyms). "Le weekend", however, is one battle long since lost, and there are many more. Neologisms, such as "e-mail", travel round the world at the speed of light and are incorporated into all languages before professors have realised what is happening.
+
+Very soon after a word is taken into another language, the spelling and pronunciation usually change to a local adaptation, sprouting new endings for plurals, and so on. In Indonesian we find: biografinya, bodynya, emailnya In the agglutinative languages, addicted to new compounds, this process produces very strange words such as: omnisportkamp, undercoveragent (both Flemish)
+
+Unfortunately no-one really knows exactly which words are in common use in the non English languages, still less which loan words have been acculturated. This knowledge must wait until academics collect and analyse a large up-to-date corpus from each language, sifting through hundreds of megabytes of text. Even then, since the purists often disapprove of such loan words, they may well expunge them!
+
+Because spelling and/or pronunciation of loan words frequently have changed from the original, hyphenation is often best handled by an algorithm for the local language. This may still require special rules where the normal local pronunciation is modified to follow American custom. Possible examples are compound words where the second part starts with a vowel, such as: "Wash-ington" and "week-end"
+
+AFRIKAANS, used by four million people in South Africa, is the successor to 17th century Dutch, imported to the Cape by the original immigrants. Deviations over the last 200 years have created a separate language.
+aa-ge-klaag-de, aan-sui-we-ring, dub-bel-sin-ning, af-waarts, band-op-ne-mer, be-stuurba-re, bonds-re-ge-ring, aarts-dom.
+
+ANGLO-SAXON (Old English), is the prime Teutonic source of English, still studied in the UK and Nordic universities.
+bearn-cen-nicge, be-hreow-sung-tid, bi-sceop-cynn, croc-wyrh-ta.
+
+BASQUE, a lonely survivor, apparently unconnected with other European languages. Spoken by 700,000 people, mainly in northwest Spain, it is probably the last of a group of languages dating from neolithic times.
+adar-txut, an-te-kis-to-ren, an-txi-na, be-lhau-nak, aphain-du, bi-otz-go-gor, aphez-goa, eza-kien-tzat.
+
+BULGARIAN, is spoken by people of Ugo-Finnish origin who conquered Slavic tribes in southeast Europe. Hyphenation practice was adapted to a mainly phonetic system in 1983 after academics and printers formally arrived at consensus.
+asiat-ski, bak-te-rio-log, bal-kan-ski, bez-par-tien, dxr-ve-ta-ta, bez-po-koi-stvo, kon-tro-l'or, na-gled-ni.
+
+CATALAN, is spoken in the Barcelona region of N.E. Spain, also the French Pyrenees, the Balearics and Andorra. There are six million speakers.
+acon-se-guir, aco-mi-a-dar, ai-xe-cat, an-tu-gues, bit-llets, ca-ta-lu-nya, cons-tru-it, co-nei-xes.
+
+CROATIAN
+During the last century there were two linguistically similar languages, Serbian and Croatian, spoken by groups who called themselves Serbs and Croats, in the Balkans. After the Yugoslav state was established in 1918 and renamed in 1929, governments of all political persuasions applied pressure to combine the languages into one, alongside the other Yugoslav languages Macedonian and Slovenian.
+
+In English this was called Serbo-croat. Serbo-croat was to become the official language of the whole country. Officially Serbo-croat contained all the words from both Croatian and Serbian and both versions of the spelling.
+
+The alphabet is unusual in containing 30 characters, but in the roman versions 'dz', 'lj' and 'nj' are considered to be one letter equivalent to a single Cyrillic character.
+
+With the break-up of Yugoslavia, the various languages should now be considered different, using the definition "a language is a dialect, with an army and navy to defend it". In parallel with the military war in the former Yugoslavia, there is a linguistic war in progress. The Croatians are insisting that all Serbian words are deleted from the vocabulary. They are using the pre-Yugoslavian Croatian words where possible, and are standardizing on the roman alphabet. The language is known as Croatian. The Serbs are insisting that all Croatian words are deleted from the vocabulary, reverting to the pre-Yugoslavian Serbian words where possible. The alphabet used in Serbia is normally Cyrillic, but the alternative roman alphabet is also used and understood. The language is known as either Serbian, or Serbo-croat, because the Serbs hope that the former Yugoslavia will again be reunited, and use the Serbo-croat language.
+
+The differences between Serbian and Croatian are small, some words i.e. hljeb or kruh meaning bread, are different and the spelling of many words is different.
+
+In Bosnia Hercegovina, the situation is more complex. Serbian areas follow the Serbian methods. Croatian areas follow the Croatian methods. Muslim areas have now invented a third language, called Bosnian, which is Serbo-croat, but using many Turkish words derived from the Ottoman occupation of that country. We believe that Bosnian is normally written in the roman alphabet. All these languages are at present mutually intelligible. Using our Crystal Ball, we would expect them to diverge at a high rate, until in a generation or two they may well become mutually unintelligible.
+
+ad-mi-ni-stra-tiv-ne, ci-ni dru-stvu, hr-vat-ski, jed-nog, mo-ra-mo, ne-ma, no-vac, ov-dje, po-li-tic-kog, pred-sjed-nik, raz-log, slu-ca-ju, su-ko-ba, tra-zi, vi-je-ce.
+
+CZECH, also known as Bohemian, is spoken in the Czech Republic. Some words have no vowels, but /l/, /r/ and /v/ can show the characteristics of a vowel. There is an official government policy on word-division.
+al-ko-ho-licky, au-to-rite, bez-sta-rost-nosti, gur-litt-skych, ma-li-cher-nym, mi-losr-den-stvi.
+
+DANISH, belongs to the Scandinavian group of the Teutonic languages, and is similar to "riksmal", one of the two official Norwegian languages. Spelling was reformed in 1948, when the practice of capitalizing nouns was ended. Like German,it is agglutinative, and has many compounds.
+adels-frue, af-mag-rings-kur, ci-vil-in-ge-ni-or, bors-kurs, by-ge-en-tre-pre-nor, barm-hjer-ti-ge.
+
+DUTCH (including Flemish), is spoken by 14 million people in the Netherlands, Belgium and former Dutch colonies. It has undergone spelling reform twice in this century and contains the unique ligature ij. It invents many new compound words.
+ach-ter-op-ge-raakt, af-ge-poei-erd, angst-wek-kend, dichtst-bij-zijn-de, be-deesd-heid, dak-an-ten-ne.
+
+ESPERANTO, was invented by Dr Zamenhoff in 1887, using elements from several languages. It now has extensive technical vocabularies, and is sometimes used as an intermediate stage in computer translation.
+aam-bau-deks-tra, ba-lot-pa-pe-ro, bri-liant, cir-cons-tan-co, cir-kvi-to, ko-merc-im-pos-to.
+
+ESTONIAN, is a Finno-Ugric language spoken by one million people, and unrelated to the languages of neighbouring Baltic states, Latvia and Lithuania. They all use the roman script.
+ade-kvaat-ne, ae-ro-plaan, ak-tiiv-sus, ahel-reakt-si-oon, akt-sia-ka-pi-tal.
+
+FINNISH, spoken by five million, is a branch of the Ural-Altaic family of languages, influenced by Latin and Greek and including many loan words from Swedish and German. (German has four case-forms; Finnish has no fewer than fifteen.) It is agglutinative but uses its own special compounding methods.
+be-sii-ni-ase-ma, etuo-ves-sa, hyok-kayk-sen, avio-ela-ma, it-se-op-pi-nut, it-se-yri-tys.
+
+FRENCH, is the mother tongue of about 80 million people, and a second language to millions more. In modern times it has been inundated with English/American words, which usually gain wide usage, in spite of official disapproval. Quality printers avoid certain "rude" word- breaks, which software must know about.
+agres-sions, an-nuels, in-ter-views, aveu-gles, lo-gi-ciels, ban-lieu, d'ar-ti-cles, echi-quier.
+
+GERMAN is spoken by 100 million people in Germany, Austria and Switzerland. Words are frequently combined to form long compounds, large numbers being in common use without appearing in any dictionary. (For example, there are numerous words created recently around the root AIDS.) The Duden dictionary is the renowned source of word-division expertise, but as some of the material was compiled many years ago it is no longer definitive. There are many special cases which pose software complications, such as variable treatment of /ck/: Drucker becomes Druk-ker, etc.; while words ending in /ff/ and /ll/ and other pairs re-insert letters in some compounds which have dropped the same letter. Thus Schiffahrt in its variations turns into Schiff-fahrt. Swiss usage is not always identical with the practice in Germany: for example, where High German shows B (ss = terminal eszett) at the end of compound part-words such as SchluB-licht the Swiss may write Schluss-licht, leading to many fresh complications. The creators and readers of printed German are probably the most exacting judges of hyphen quality in the world...hyphenators fail at their peril!
+fall-strick, ge-spen-stisch, ideo-gramm, hoch-an-stan-dig, ir-ren-arzt, klas-sen-auf-satz, ge-rau-sche, le-bens-qua-li-tat.
+
+Recently the Germans have thrown the cat amongst the pigeons by proposing a radical reform of both the spelling and hyphenation practice. This is defined in Deutsche Reschtschreibung, Regeln und Worterverzeichnis, Gunter Narr Verlag, Tubingen, ISBN 3-8233-5250-4. One hundred pages of rules and one hundred and fifty pages of examples. This has caused a major revolt, among the conservative German population, many of whom believe that these changes will never be implemented.  In the year 2000 most newspapers, Schools and Government departments are moving over to the new orthography.  The look of German publications has changed drastically, because the new compounding rules do not allow the very long words described below.
+
+    German can create some of the world's longest words, which software must endeavour to deal with:
+    e.g. Do-nau-dampf-schiff-fahrts-elek-tri-zi-ta-ten-haupt-be-triebs-werk-bau-un-ter-be-am-ten-ge-sell-schaft . Which can be rendered possibly as "Club for under managers of the head office management of the Danube steamboat electrical services". Bernard Levin in THE TIMES once quoted as an example of German word invention: Hot-ten-tot-ten-po-ten-ta-ten-tan-ten-to-ten-at-ten-ta-ter ("death assassin of the aunt of the Hottentot potentate") but possibly this is just a simple tongue-twister beloved of jolly Heidelberg students.
+
+GREEK, the first great language of western civilization, has much influenced the vocabulary of all European languages. Hyphenologist can divide words in both ancient and modern Greek. The latter, known as Demotic, is spoken by 10 million people. Ancient Greek had an elaborate set of accents, nowadays mostly discarded. Some character combinations are never split.
+ek-stra-teia, ana-gno-tes, apo-klei-sti-ka, eso-deia, e-kti-me-seos, is-sto-riou-la, mpou-mpou-ki, olu-mpia-kos.
+
+HUNGARIAN, is spoken by 10 million people in Hungary, and by substantial minorities in neighbouring countries. Surprisingly, it is still spoken in parts of distant Siberia, from where nomadic ancestors travelled 2000 miles to reach the Danube in the 6th century. It is a difficult blending of Asian grammar with western language characteristics. Some letter combinations are never split and some splits require insertion of an additional character. The language is agglutinative in a special way.
+anak-ro-niz-mus, arisz-to-kra-ta, au-tos-is-ko-la, be-osz-ta-su, eb-resz-too-ra, egyen-kent,
+
+ICELANDIC, is very similar to Old Norse, the language of the Vikings, so similar that a schoolchild can read the ancient Norse sagas. Insularity, and a determination to resist pollution by imported words, keeps the language pure. The alphabet includes runic letters eth and thorn. The language has some unique rules of division.
+ever-oppu-keppn-inni, kynn-ing-ar-nams-effn-is, fjol-skyld-un-efnd-ar, heil-brigd-is-stett-un-um.
+
+INDONESIAN, is virtually the same language as Malay (q.v.), having only small differences in certain spellings. It is known as Bahasa Malay (literally "the Language"). Indonesian orthography followed Dutch influence during the colonial period. The people are Moslem, and as in Malayasia printers prefer to avoid word-division of commonly occurring holy or religious words (examples are Koran, Quran, Mohammed).
+pu-te-ra+pu-te-ray-nya, meng-gam-bar, ang-ka, em-pat-pu-luh, sa-ing, si-nga.
+
+IRISH (Gaelic), is an official language of the republic of Ireland, encouraged by the government and taught in schools, but spoken only by 500,000 people (15 per cent of the population). It is similar to Scottish Gaelic (q.v.), only differing in some spellings.
+broc-am-us, barr-og, caith-eamh, aghaidh-eanna, cam-easna, aer-plana, caill-te, ain-mhioch-daonn-uil.
+
+ITALIAN, which some think the most beautiful of all languages, is spoken by about 60 million people. The dialect of Tuscany (Florentine) became established as the literary standard in the 14th century. Italian is closer to Latin than the other Romance languages.
+au-to-mo-bi-li-sti-ca, ca-po-fa-mi-glia, in-du-stria-lis-mo, e-di-fi-cio, fo-to-elet-tri-ca vi-deo-in-for-ma-zio-ne.
+
+LATIN, language of the Romans, spread over much of the known world in the Middle Ages as the language of philosophy, theology and eventually science. It remains an essential subject in a wide academic field, and is still published.
+am-phi-tea-trum, bel-li-co-sio-rem, le-gi-o-ni-bus, in-ob-ser-van-tia.
+
+
+
+Armourial bearings of Leeds University
+
+faithful to the classic stile
+
+LATVIAN, sometimes known as Lettish, is spoken by 1.5 million people. It is related to Lithuanian, and both are part of the Indo-European family of languages.
+aiz-mir-sties, at-spulgs, augst-cil-nis, aro-mats, bez-par-te-jisks, balt-vins, cem-pio-nats, dzimt-cil-veks.
+
+LITHUANIAN has about three million speakers; it is the closest relation now extant to the original Indo-European language. Some words are identical to Sanskrit, and some may even be older than Sanskrit.
+ag-ro-tech-ni-ka, ak-va-riu-mas, asam-ble-ja, bergz-dzias, bol-se-vi-kas, doc-tri-nie-rius.
+
+MALAY, one of the Polynesian languages, but influenced by Jawi Arabic, is spoken by seven million in Malaysia and by 200 million in Indonesia. There are minor spelling differences with Indonesian. Plurals are shown by duplicated words with a link-hyphen: rokok is cigarette (plural rokok+rokok). The orthography orang2 is the equivalent of orang-orang, thus the figure 2 has become a special-case character. The people are Moslem, and prefer to avoid word- division in many common religious words (Koran, Quran, Qu'ran).
+an-ta-ra-bang-sa, ba-nyak-nya, berd-am-ping, ber-ge-lem-bung, be-lang-nya, ba-rang+ba-rang.
+
+MALTESE, is based on Arabic, brought to the island by Moorish conquerors in the 9th century. Two hundred years later Normans from Sicily drove out the Arabs, and subsequently introduced Romance words to the language.
+ak-ku-pan-ja, bez-zejt-homx, bghu-la, ca-ghak, bhax+xa-di-ni, dagh-di-gha, darb'oh-ra, ew-ro-pa.
+
+NORWEGIAN, by decree, has two versions: riksmal and landsmal. Riksmal has strong similarities with Danish. Landsmal is based on Old Norse, and is jointly used in government matters. To complicate matters further, a new third language is said to be evolving as a combination of the existing two. There are many compound words.
+an-dels-sel-skap, ar-beids-los-het, ar-hun-dre-de, bar-ne-verns-nemnd, de-talj-pris, dia-lekt-ord.
+
+POLISH, is spoken by 35 million inhabitants of Poland (and half a million in North America). It is Slavic but is written in the roman alphabet.
+an-giel-skie, chlop-cow, czwart-kow, gwa-ran-cja, gos-po-dar-stwo, eks-pre-so-wy, elek-trycz-ny, drzwia-mi.
+
+PORTUGUESE, has 10 million speakers in Portugal and 125 million in Brazil. It is a Romance language, not greatly dissimilar to Spanish, but has its own strong characteristics. There are orthographic differences between Portugal and Brazil, but quality word-division is not affected.
+af-faia-te, ama-nha, anoi-te-cer, apreen-so-ra, atra-ve-sa-ram, abai-xo, ba-tra-quios, can-deei-ro.
+
+ROMANIAN, (sometimes spelled Rumanian and also known as Moldavian) is the only Romance language spoken in eastern Europe. It has been influenced by its neighbours, particularly Hungary and Albania. It is spoken by 20 million people, including Moldavians who are semi-autonomous within the Russian federation.
+apli-ca-tiu-ne, ar-hie-pis-cop, bur-ghez, des-po-pu-la, co-lec-ti-vis-tul, in-zes-tra.
+
+RUSSIAN, is spoken by about 200 million people; it is written in the Cyrillic alphabet, a design based on the Greek alphabet by two missionaries, Cyril and Methodius. The language is very rich, having been much influenced by Latin and Greek, like western languages. The methodology of word-division is not very rigorous.
+ag-rom-nuj, aspi-ran-tu-ra,bez-ot-vet-stven-nyi, kos-mo-navy, kul'-tur-nee, ma-lo-gra-mot-nyi.
+
+SCOTTISH GAELIC, is used by one per cent of the population of Scotland, and has limited official status, being recognised by some local authorities. The spelling varies somewhat from Irish Gaelic.
+air-eamh-ach, aith-ghiorr-ach-adh, crann-chur, an-iochd-mhor, criaidh-ghleac, lag-ail.
+
+SERBIAN, see notes on Croatian
+ab-di-ci-ra-ti, a-sep-ti-can, do-mo-vi-na, film-ski, in-kvi-zi-ci-ja, ka-pi-tu-la-ci-ja, nad-gled-nik, od-la-zak, po-stu-pan, raz-ore-nje, svr-sen, u-pra-va, vaz-nost.
+
+SLOVAK, is the second of the two official languages of the former Czechoslovakia, being spoken by five million inhabitants of Slovakia. It has a slightly different alphabet from Czech, and its own distinctive literature.
+ano-nym-ny, bez-sta-rost-ny, bo-hat-stvo, bur-zo-az-ny, by-ro-kra-cia, este-tic-kych.
+
+SLOVENE, is spoken by 1.5 million people in the onetime Austro-Hapsburg province of Slovenia, which is now an independent state neighbouring Austria. The language is related to Serbo-Croat.
+iz-cr-pan, do-vr-si-tev, do-vzet-nost, dia-co-cep-ski, igrs-ka, ener-gi-ja, hkrat-nost, ne-od-kri-to-src-no.
+
+SPANISH, is spoken by 275 million people in Spain, USA, Mexico, and most of South America. It is the most widely spoken of the Romance languages. The purest form is known as Castilian. The structure of the language is well defined and invariable, therefore relatively simple. But quality printing houses prefer to avoid a variety of so-called "rude" letter combinations from occurring at line-ends.
+abu-rri-do, acos-tum-bra-do, acus-ti-ca ad-he-rir, al-muer-zo am-nis-tia, cons-truc-cion, des-he-cho.
+
+SWAHILI, originating in Zanzibar, became the lingua franca of East Africa, and the official language of Tanzania and Kenya. It is one of the Bantu languages, with borrowings from Arabic. Many languages are inflected at the end of the word, but in Swahili the changes occur at the front: mjinga = fool; wajinga = fools.
+nyu-mbani, mtu-mwa, nita-kuja, utau-liza, mta-kwi-sha, amea-nza, hu-mwa-mbia, ki-swa-hili.
+
+SWEDISH, is spoken by 8 million people, being the most widely used of the Scandinavia languages. In the past it borrowed many words from German and French, and recently even more words from English/American. Swedish is agglutinative and has many compound words which should be respected.
+alarm-be-red-skap, al-ko-hil-test-ap-pa-rat, av-grunds-hals-nin-gen, bo-stads, pro-ble-ma-ti-ken.
+
+TURKISH, has 60 million speakers. Originally written in Arabic script, it was converted into the roman alphabet by Ataturk in 1928. Turkey belongs to NATO and wants to join the European Community.
+acik-goz, ag-ri-mak, alu-min-yum, cift-les-mek, avus-tral-ya, azalt-mak, ders-ha-ne, do-kul-maz-lik.
+
+UKRAINIAN, is spoken in one of the largest of the autonomous republics of the new Russian confederation. It uses a slightly different alphabet from the Russian Cyrillic; the language was originally known as Ruthenian.
+za-okru-glennj, agent-stvo, av-to-krat, av-to-no-mi-ja, shpi-gun-stvo, za-ne-vo-lju-va-ti,
+
+WELSH, is spoken by half a million people, less than one quarter of the population of Wales, but it has a strong literary tradition and its own television channel. It belongs (with Breton) to the Celtic branch of the Indo-European family, and has very complex orthography.
+all-gyrch-ydd, am-ser-ydd-iaeth, ang-hyd-ffurf-iwr, bac-ter-iol-eg-wr, blaen-as-gell-wr, cladd-edig-aeth.
+
+
+
+At the Hyphen-ators Convention
+
+The man who thought bad computer hyphens
+
+were something you just had to put up with.
+
+
+
+
+A glossary of some hyphen terms
+
+    link-hyphen
+
+    Permanent. May end a line, but need not; shows on screen. Sometimes represented as an equals or plus sign.
+
+    break-hyphen
+
+    Temporary. Used to split word at line-end, shows on screen after justification occurs.
+
+    soft hyphen
+
+    Invisibly marks hyphen point for subsequent (discretionary) processing. Shows on screen only when normally hidden codes are revealed.
+
+    hard hyphen
+
+    Permanent like link-hyphen. Occurs in equations. Must be preserved in position. Ideally should be represented by a separate symbol.
+
+    repeat hyphen
+
+    In some dictionaries a link-hyphen at the line-end is confirmed as such by being repeated at the start of the next line. (Similarly used routinely in Portuguese.)
+
+    cancel hyphen Command.
+
+    Inserted before a word to prevent hyphenation. (Usually applies to all subsequent uses of the same word.)
+
+    hyphenation-on Command.
+
+    Appears before text and applies to whole document.
+
+    de-hyphen
+
+    Macro which can remove hyphen commands and existing hyphens from whole document.
+
+    preferred hyphen
+
+    In some dictionaries, recommendation shown by special symbol (sometimes plus sign). Also indicated by numerical values in some programs.
+
+    hyphen marker
+
+    Usually bold fullstop, sometimes used in dictionaries to mark syllables. (Retains use of the normal symbol to indicate link-hyphen.)
+
+    suspension hyphen
+
+    One separated from completion, as in /east- and west-facing policies/ (not a good line-ending).
+
+    floating hyphen
+
+    Former break-hyphen which survives after reformatting of the copy, usually followed by unwanted word-space.
+
+Note: clearly there is a shortage of suitable symbols to represent the various hyphen-modes, and a lack of standardization. One cannot be sure of the status of any hyphen merely by inspection.
