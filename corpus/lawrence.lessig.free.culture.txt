@@ -1,0 +1,550 @@
+Ch. 2 - Mere Copyists
+*In 1839,* Louis Daguerre invented the first practical technology for producing
+what we would call "photographs." Appropriately enough, they were called
+"daguerreotypes." The process was complicated and expensive, and the field was
+thus limited to professionals and a few zealous and wealthy amateurs. (There
+was even an American Daguerre Association that helped regulate the industry, as
+do all such associations, by keeping competition down so as to keep prices up.)
+
+Yet despite high prices, the demand for daguerreotypes was strong. This pushed
+inventors to find simpler and cheaper ways to make "automatic pictures."
+William Talbot soon discovered a process for making "negatives." But because
+the negatives were glass, and had to be kept wet, the process still remained
+expensive and cumbersome. In the 1870s, dry plates were developed, making it
+easier to separate the taking of a picture from its developing. These were
+still plates of glass, and thus it was still not a process within reach of most
+amateurs.
+
+The technological change that made mass photography possible didn't happen
+until 1888, and was the creation of a single man. George Eastman, himself an
+amateur photographer, was frustrated by the technology of photographs made with
+plates. In a flash of insight (so to speak), Eastman saw that if the film could
+be made to be flexible, it could be held on a single spindle. That roll could
+then be sent to a developer, driving the costs of photography down
+substantially. By lowering the costs, Eastman expected he could dramatically
+broaden the population of photographers.
+
+Eastman developed flexible, emulsion-coated paper film and placed rolls of it
+in small, simple cameras: the Kodak. The device was marketed on the basis of
+its simplicity. "You press the button and we do the rest."[^26] As he described
+in /The Kodak Primer/:
+
+  The principle of the Kodak system is the separation of the work that any
+  person whomsoever can do in making a photograph, from the work that only an
+  expert can do. ... We furnish anybody, man, woman or child, who has
+  sufficient intelligence to point a box straight and press a button, with an
+  instrument which altogether removes from the practice of photography the
+  necessity for exceptional facilities or, in fact, any special knowledge of
+  the art. It can be employed without preliminary study, without a darkroom and
+  without chemicals.[^27]
+
+For $25, anyone could make pictures. The camera came preloaded with film, and
+when it had been used, the camera was returned to an Eastman factory, where the
+film was developed. Over time, of course, the cost of the camera and the ease
+with which it could be used both improved. Roll film thus became the basis for
+the explosive growth of popular photography. Eastman's camera first went on
+sale in 1888; one year later, Kodak was printing more than six thousand
+negatives a day. From 1888 through 1909, while industrial production was rising
+by 4.7 percent, photographic equipment and material sales increased by 11
+percent.[^28] Eastman Kodak's sales during the same period experienced an
+average annual increase of over 17 percent.[^29]
+
+The real significance of Eastman's invention, however, was not economic. It was
+social. Professional photography gave individuals a glimpse of places they
+would never otherwise see. Amateur photography gave them the ability to record
+their own lives in a way they had never been able to do before. As author Brian
+Coe notes, "For the first time the snapshot album provided the man on the
+street with a permanent record of his family and its activities. ... For the
+first time in history there exists an authentic visual record of the appearance
+and activities of the common man made without [literary] interpretation or
+bias."[^30]
+
+In this way, the Kodak camera and film were technologies of expression. The
+pencil or paintbrush was also a technology of expression, of course. But it
+took years of training before they could be deployed by amateurs in any useful
+or effective way. With the Kodak, expression was possible much sooner and more
+simply. The barrier to expression was lowered. Snobs would sneer at its
+"quality"; professionals would discount it as irrelevant. But watch a child
+study how best to frame a picture and you get a sense of the experience of
+creativity that the Kodak enabled. Democratic tools gave ordinary people a way
+to express themselves more easily than any tools could have before.
+
+What was required for this technology to flourish? Obviously, Eastman's genius
+was an important part. But also important was the legal environment within
+which Eastman's invention grew. For early in the history of photography, there
+was a series of judicial decisions that could well have changed the course of
+photography substantially. Courts were asked whether the photographer, amateur
+or professional, required permission before he could capture and print whatever
+image he wanted. Their answer was no.[^31]
+
+The arguments in favor of requiring permission will sound surprisingly
+familiar. The photographer was "taking" something from the person or building
+whose photograph he shot - pirating something of value. Some even thought he
+was taking the target's soul. Just as Disney was not free to take the pencils
+that his animators used to draw Mickey, so, too, should these photographers not
+be free to take images that they thought valuable.
+
+On the other side was an argument that should be familiar, as well. Sure, there
+may be something of value being used. But citizens should have the right to
+capture at least those images that stand in public view. (Louis Brandeis, who
+would become a Supreme Court Justice, thought the rule should be different for
+images from private spaces.[^32]) It may be that this means that the
+photographer gets something for nothing. Just as Disney could take inspiration
+from /Steamboat Bill, Jr./ or the Brothers Grimm, the photographer should be
+free to capture an image without compensating the source.
+
+Fortunately for Mr. Eastman, and for photography in general, these early
+decisions went in favor of the pirates. In general, no permission would be
+required before an image could be captured and shared with others. Instead,
+permission was presumed. Freedom was the default. (The law would eventually
+craft an exception for famous people: commercial photographers who snap
+pictures of famous people for commercial purposes have more restrictions than
+the rest of us. But in the ordinary case, the image can be captured without
+clearing the rights to do the capturing.[^33])
+
+We can only speculate about how photography would have developed had the law
+gone the other way. If the presumption had been against the photographer, then
+the photographer would have had to demonstrate permission. Perhaps Eastman
+Kodak would have had to demonstrate permission, too, before it developed the
+film upon which images were captured. After all, if permission were not
+granted, then Eastman Kodak would be benefiting from the "theft" committed by
+the photographer. Just as Napster benefited from the copyright infringements
+committed by Napster users, Kodak would be benefiting from the "image-right"
+infringement of its photographers. We could imagine the law then requiring that
+some form of permission be demonstrated before a company developed pictures. We
+could imagine a system developing to demonstrate that permission.
+
+But though we could imagine this system of permission, it would be very hard to
+see how photography could have flourished as it did if the requirement for
+permission had been built into the rules that govern it. Photography would have
+existed. It would have grown in importance over time. Professionals would have
+continued to use the technology as they did - since professionals could have
+more easily borne the burdens of the permission system. But the spread of
+photography to ordinary people would not have occurred. Nothing like that
+growth would have been realized. And certainly, nothing like that growth in a
+democratic technology of expression would have been realized.
+
+*If you drive* through San Francisco's Presidio, you might see two gaudy yellow
+school buses painted over with colorful and striking images, and the logo "Just
+Think!" in place of the name of a school. But there's little that's "just"
+cerebral in the projects that these busses enable. These buses are filled with
+technologies that teach kids to tinker with film. Not the film of Eastman. Not
+even the film of your VCR. Rather the "film" of digital cameras. Just Think! is
+a project that enables kids to make films, as a way to understand and critique
+the filmed culture that they find all around them. Each year, these busses
+travel to more than thirty schools and enable three hundred to five hundred
+children to learn something about media by doing something with media. By
+doing, they think. By tinkering, they learn.
+
+These buses are not cheap, but the technology they carry is increasingly so.
+The cost of a high-quality digital video system has fallen dramatically. As one
+analyst puts it, "Five years ago, a good real-time digital video editing system
+cost $25,000. Today you can get professional quality for $595."[^34] These
+buses are filled with technology that would have cost hundreds of thousands
+just ten years ago. And it is now feasible to imagine not just buses like this,
+but classrooms across the country where kids are learning more and more of
+something teachers call "media literacy."
+
+"Media literacy," as Dave Yanofsky, the executive director of Just Think!, puts
+it, "is the ability ... to understand, analyze, and deconstruct media images.
+Its aim is to make [kids] literate about the way media works, the way it's
+constructed, the way it's delivered, and the way people access it."
+
+This may seem like an odd way to think about "literacy." For most people,
+literacy is about reading and writing. Faulkner and Hemingway and noticing
+split infinitives are the things that "literate" people know about.
+
+Maybe. But in a world where children see on average 390 hours of television
+commercials per year, or between 20,000 and 45,000 commercials generally,[^35]
+it is increasingly important to understand the "grammar" of media. For just as
+there is a grammar for the written word, so, too, is there one for media. And
+just as kids learn how to write by writing lots of terrible prose, kids learn
+how to write media by constructing lots of (at least at first) terrible media.
+
+A growing field of academics and activists sees this form of literacy as
+crucial to the next generation of culture. For though anyone who has written
+understands how difficult writing is - how difficult it is to sequence the
+story, to keep a reader's attention, to craft language to be understandable -
+few of us have any real sense of how difficult media is. Or more fundamentally,
+few of us have a sense of how media works, how it holds an audience or leads it
+through a story, how it triggers emotion or builds suspense.
+
+It took filmmaking a generation before it could do these things well. But even
+then, the knowledge was in the filming, not in writing about the film. The
+skill came from experiencing the making of a film, not from reading a book
+about it. One learns to write by writing and then reflecting upon what one has
+written. One learns to write with images by making them and then reflecting
+upon what one has created.
+
+This grammar has changed as media has changed. When it was just film, as
+Elizabeth Daley, executive director of the University of Southern California's
+Annenberg Center for Communication and dean of the USC School of Cinema-
+Television, explained to me, the grammar was about "the placement of objects,
+color, ... rhythm, pacing, and texture."[^36] But as computers open up an
+interactive space where a story is "played" as well as experienced, that
+grammar changes. The simple control of narrative is lost, and so other
+techniques are necessary. Author Michael Crichton had mastered the narrative of
+science fiction. But when he tried to design a computer game based on one of
+his works, it was a new craft he had to learn. How to lead people through a
+game without their feeling they have been led was not obvious, even to a wildly
+successful author.[^37]
+
+This skill is precisely the craft a filmmaker learns. As Daley describes,
+"people are very surprised about how they are led through a film. [I]t is
+perfectly constructed to keep you from seeing it, so you have no idea. If a
+filmmaker succeeds you do not know how you were led." If you know you were led
+through a film, the film has failed.
+
+Yet the push for an expanded literacy - one that goes beyond text to include
+audio and visual elements - is not about making better film directors. The aim
+is not to improve the profession of filmmaking at all. Instead, as Daley
+explained,
+
+  From my perspective, probably the most important digital divide is not access
+  to a box. It's the ability to be empowered with the language that that box
+  works in. Otherwise only a very few people can write with this language, and
+  all the rest of us are reduced to being read-only.
+
+"Read-only." Passive recipients of culture produced elsewhere. Couch potatoes.
+Consumers. This is the world of media from the twentieth century.
+
+The twenty-first century could be different. This is the crucial point: It
+could be both read and write. Or at least reading and better understanding the
+craft of writing. Or best, reading and understanding the tools that enable the
+writing to lead or mislead. The aim of any literacy, and this literacy in
+particular, is to "empower people to choose the appropriate language for what
+they need to create or express."[^38] It is to enable students "to communicate
+in the language of the twenty-first century."[^39]
+
+As with any language, this language comes more easily to some than to others.
+It doesn't necessarily come more easily to those who excel in written language.
+Daley and Stephanie Barish, director of the Institute for Multimedia Literacy
+at the Annenberg Center, describe one particularly poignant example of a
+project they ran in a high school. The high school was a very poor inner-city
+Los Angeles school. In all the traditional measures of success, this school was
+a failure. But Daley and Barish ran a program that gave kids an opportunity to
+use film to express meaning about something the students know something about -
+gun violence.
+
+The class was held on Friday afternoons, and it created a relatively new
+problem for the school. While the challenge in most classes was getting the
+kids to come, the challenge in this class was keeping them away. The "kids were
+showing up at 6 A.M. and leaving at 5 at night," said Barish. They were working
+harder than in any other class to do what education should be about - learning
+how to express themselves.
+
+Using whatever "free web stuff they could find," and relatively simple tools to
+enable the kids to mix "image, sound, and text," Barish said this class
+produced a series of projects that showed something about gun violence that few
+would otherwise understand. This was an issue close to the lives of these
+students. The project "gave them a tool and empowered them to be able to both
+understand it and talk about it," Barish explained. That tool succeeded in
+creating expression - far more successfully and powerfully than could have been
+created using only text. "If you had said to these students, 'you have to do it
+in text,' they would've just thrown their hands up and gone and done something
+else," Barish described, in part, no doubt, because expressing themselves in
+text is not something these students can do well. Yet neither is text a form in
+which /these/ ideas can be expressed well. The power of this message depended
+upon its connection to this form of expression.
+
+"But isn't education about teaching kids to write?" I asked. In part, of
+course, it is. But why are we teaching kids to write? Education, Daley
+explained, is about giving students a way of "constructing meaning." To say
+that that means just writing is like saying teaching writing is only about
+teaching kids how to spell. Text is one part - and increasingly, not the most
+powerful part - of constructing meaning. As Daley explained in the most moving
+part of our interview,
+
+  What you want is to give these students ways of constructing meaning. If all
+  you give them is text, they're not going to do it. Because they can't. You
+  know, you've got Johnny who can look at a video, he can play a video game, he
+  can do graffiti all over your walls, he can take your car apart, and he can
+  do all sorts of other things. He just can't read your text. So Johnny comes
+  to school and you say, "Johnny, you're illiterate. Nothing you can do
+  matters." Well, Johnny then has two choices: He can dismiss you or he [can]
+  dismiss himself. If his ego is healthy at all, he's going to dismiss you.
+  [But i]nstead, if you say, "Well, with all these things that you can do,
+  let's talk about this issue. Play for me music that you think reflects that,
+  or show me images that you think reflect that, or draw for me something that
+  reflects that." Not by giving a kid a video camera and ... saying, "Let's go
+  have fun with the video camera and make a little movie." But instead, really
+  help you take these elements that you understand, that are your language, and
+  construct meaning about the topic. ...
+
+  That empowers enormously. And then what happens, of course, is eventually, as
+  it has happened in all these classes, they bump up against the fact, "I need
+  to explain this and I really need to write something." And as one of the
+  teachers told Stephanie, they would rewrite a paragraph 5, 6, 7, 8 times,
+  till they got it right.
+
+  Because they needed to. There was a reason for doing it. They needed to say
+  something, as opposed to just jumping through your hoops. They actually
+  needed to use a language that they didn't speak very well. But they had come
+  to understand that they had a lot of power with this language.
+
+*When two planes* crashed into the World Trade Center, another into the
+Pentagon, and a fourth into a Pennsylvania field, all media around the world
+shifted to this news. Every moment of just about every day for that week, and
+for weeks after, television in particular, and media generally, retold the
+story of the events we had just witnessed. The telling was a retelling, because
+we had seen the events that were described. The genius of this awful act of
+terrorism was that the delayed second attack was perfectly timed to assure that
+the whole world would be watching.
+
+These retellings had an increasingly familiar feel. There was music scored for
+the intermissions, and fancy graphics that flashed across the screen. There was
+a formula to interviews. There was "balance," and seriousness. This was news
+choreographed in the way we have increasingly come to expect it, "news as
+entertainment," even if the entertainment is tragedy.
+
+But in addition to this produced news about the "tragedy of September 11,"
+those of us tied to the Internet came to see a very different production as
+well. The Internet was filled with accounts of the same events. Yet these
+Internet accounts had a very different flavor. Some people constructed photo
+pages that captured images from around the world and presented them as slide
+shows with text. Some offered open letters. There were sound recordings. There
+was anger and frustration. There were attempts to provide context. There was,
+in short, an extraordinary worldwide barn raising, in the sense Mike Godwin
+uses the term in his book /Cyber Rights/, around a news event that had captured
+the attention of the world. There was ABC and CBS, but there was also the
+Internet.N
+I don't mean simply to praise the Internet - though I do think the people who
+supported this form of speech should be praised. I mean instead to point to a
+significance in this form of speech. For like a Kodak, the Internet enables
+people to capture images. And like in a movie by a student on the "Just Think!"
+bus, the visual images could be mixed with sound or text.
+
+But unlike any technology for simply capturing images, the Internet allows
+these creations to be shared with an extraordinary number of people,
+practically instantaneously. This is something new in our tradition - not just
+that culture can be captured mechanically, and obviously not just that events
+are commented upon critically, but that this mix of captured images, sound, and
+commentary can be widely spread practically instantaneously.
+
+September 11 was not an aberration. It was a beginning. Around the same time, a
+form of communication that has grown dramatically was just beginning to come
+into public consciousness: the Web-log, or blog. The blog is a kind of public
+diary, and within some cultures, such as in Japan, it functions very much like
+a diary. In those cultures, it records private facts in a public way - it's a
+kind of electronic /Jerry Springer/, available anywhere in the world.
+
+But in the United States, blogs have taken on a very different character. There
+are some who use the space simply to talk about their private life. But there
+are many who use the space to engage in public discourse. Discussing matters of
+public import, criticizing others who are mistaken in their views, criticizing
+politicians about the decisions they make, offering solutions to problems we
+all see: blogs create the sense of a virtual public meeting, but one in which
+we don't all hope to be there at the same time and in which conversations are
+not necessarily linked. The best of the blog entries are relatively short; they
+point directly to words used by others, criticizing with or adding to them.
+They are arguably the most important form of unchoreographed public discourse
+that we have.
+
+That's a strong statement. Yet it says as much about our democracy as it does
+about blogs. This is the part of America that is most difficult for those of us
+who love America to accept: Our democracy has atrophied. Of course we have
+elections, and most of the time the courts allow those elections to count. A
+relatively small number of people vote in those elections. The cycle of these
+elections has become totally professionalized and routinized. Most of us think
+this is democracy.
+
+But democracy has never just been about elections. Democracy means rule by the
+people, but rule means something more than mere elections. In our tradition, it
+also means control through reasoned discourse. This was the idea that captured
+the imagination of Alexis de Tocqueville, the nineteenth-century French lawyer
+who wrote the most important account of early "Democracy in America." It wasn't
+popular elections that fascinated him - it was the jury, an institution that
+gave ordinary people the right to choose life or death for other citizens. And
+most fascinating for him was that the jury didn't just vote about the outcome
+they would impose. They deliberated. Members argued about the "right" result;
+they tried to persuade each other of the "right" result, and in criminal cases
+at least, they had to agree upon a unanimous result for the process to come to
+an end.[^40]
+
+Yet even this institution flags in American life today. And in its place, there
+is no systematic effort to enable citizen deliberation. Some are pushing to
+create just such an institution.[^41] And in some towns in New England,
+something close to deliberation remains. But for most of us for most of the
+time, there is no time or place for "democratic deliberation" to occur.
+
+More bizarrely, there is generally not even permission for it to occur. We, the
+most powerful democracy in the world, have developed a strong norm against
+talking about politics. It's fine to talk about politics with people you agree
+with. But it is rude to argue about politics with people you disagree with.
+Political discourse becomes isolated, and isolated discourse becomes more
+extreme.[^42] We say what our friends want to hear, and hear very little beyond
+what our friends say.
+
+Enter the blog. The blog's very architecture solves one part of this problem.
+People post when they want to post, and people read when they want to read. The
+most difficult time is synchronous time. Technologies that enable asynchronous
+communication, such as e-mail, increase the opportunity for communication.
+Blogs allow for public discourse without the public ever needing to gather in a
+single public place.
+
+But beyond architecture, blogs also have solved the problem of norms. There's
+no norm (yet) in blog space not to talk about politics. Indeed, the space is
+filled with political speech, on both the right and the left. Some of the most
+popular sites are conservative or libertarian, but there are many of all
+political stripes. And even blogs that are not political cover political issues
+when the occasion merits.
+
+The significance of these blogs is tiny now, though not so tiny. The name
+Howard Dean may well have faded from the 2004 presidential race but for blogs.
+Yet even if the number of readers is small, the reading is having an effect.
+
+One direct effect is on stories that had a different life cycle in the
+mainstream media. The Trent Lott affair is an example. When Lott "misspoke" at
+a party for Senator Strom Thurmond, essentially praising Thurmond's
+segregationist policies, he calculated correctly that this story would
+disappear from the mainstream press within forty-eight hours. It did. But he
+didn't calculate its life cycle in blog space. The bloggers kept researching
+the story. Over time, more and more instances of the same "misspeaking"
+emerged. Finally, the story broke back into the mainstream press. In the end,
+Lott was forced to resign as senate majority leader.[^43]
+
+This different cycle is possible because the same commercial pressures don't
+exist with blogs as with other ventures. Television and newspapers are
+commercial entities. They must work to keep attention. If they lose readers,
+they lose revenue. Like sharks, they must move on.
+
+But bloggers don't have a similar constraint. They can obsess, they can focus,
+they can get serious. If a particular blogger writes a particularly interesting
+story, more and more people link to that story. And as the number of links to a
+particular story increases, it rises in the ranks of stories. People read what
+is popular; what is popular has been selected by a very democratic process of
+peer-generated rankings.
+
+There's a second way, as well, in which blogs have a different cycle from the
+mainstream press. As Dave Winer, one of the fathers of this movement and a
+software author for many decades, told me, another difference is the absence of
+a financial "conflict of interest." "I think you have to take the conflict of
+interest" out of journalism, Winer told me. "An amateur journalist simply
+doesn't have a conflict of interest, or the conflict of interest is so easily
+disclosed that you know you can sort of get it out of the way."
+
+These conflicts become more important as media becomes more concentrated (more
+on this below). A concentrated media can hide more from the public than an
+unconcentrated media can - as CNN admitted it did after the Iraq war because it
+was afraid of the consequences to its own employees.[^44] It also needs to
+sustain a more coherent account. (In the middle of the Iraq war, I read a post
+on the Internet from someone who was at that time listening to a satellite
+uplink with a reporter in Iraq. The New York headquarters was telling the
+reporter over and over that her account of the war was too bleak: She needed to
+offer a more optimistic story. When she told New York that wasn't warranted,
+they told her that /they/ were writing "the story.")
+
+Blog space gives amateurs a way to enter the debate - "amateur" not in the
+sense of inexperienced, but in the sense of an Olympic athlete, meaning not
+paid by anyone to give their reports. It allows for a much broader range of
+input into a story, as reporting on the Columbia disaster revealed, when
+hundreds from across the southwest United States turned to the Internet to
+retell what they had seen.[^45] And it drives readers to read across the range
+of accounts and "triangulate," as Winer puts it, the truth. Blogs, Winer says,
+are "communicating directly with our constituency, and the middle man is out of
+it" - with all the benefits, and costs, that might entail.
+
+Winer is optimistic about the future of journalism infected with blogs. "It's
+going to become an essential skill," Winer predicts, for public figures and
+increasingly for private figures as well. It's not clear that "journalism" is
+happy about this - some journalists have been told to curtail their
+blogging.[^46] But it is clear that we are still in transition. "A lot of what
+we are doing now is warm-up exercises," Winer told me. There is a lot that must
+mature before this space has its mature effect. And as the inclusion of content
+in this space is the least infringing use of the Internet (meaning infringing
+on copyright), Winer said, "we will be the last thing that gets shut down."
+
+This speech affects democracy. Winer thinks that happens because "you don't
+have to work for somebody who controls, [for] a gate-keeper." That is true. But
+it affects democracy in another way as well. As more and more citizens express
+what they think, and defend it in writing, that will change the way people
+understand public issues. It is easy to be wrong and misguided in your head. It
+is harder when the product of your mind can be criticized by others. Of course,
+it is a rare human who admits that he has been persuaded that he is wrong. But
+it is even rarer for a human to ignore when he has been proven wrong. The
+writing of ideas, arguments, and criticism improves democracy. Today there are
+probably a couple of million blogs where such writing happens. When there are
+ten million, there will be something extraordinary to report.
+
+*John Seely Brown* is the chief scientist of the Xerox Corporation. His work,
+as his Web site describes it, is "human learning and ... the creation of
+knowledge ecologies for creating ... innovation."
+
+Brown thus looks at these technologies of digital creativity a bit differently
+from the perspectives I've sketched so far. I'm sure he would be excited about
+any technology that might improve democracy. But his real excitement comes from
+how these technologies affect learning.
+
+As Brown believes, we learn by tinkering. When "a lot of us grew up," he
+explains, that tinkering was done "on motorcycle engines, lawn-mower engines,
+automobiles, radios, and so on." But digital technologies enable a different
+kind of tinkering - with abstract ideas though in concrete form. The kids at
+Just Think! not only think about how a commercial portrays a politician; using
+digital technology, they can take the commercial apart and manipulate it,
+tinker with it to see how it does what it does. Digital technologies launch a
+kind of bricolage, or "free collage," as Brown calls it. Many get to add to or
+transform the tinkering of many others.
+
+The best large-scale example of this kind of tinkering so far is free software
+or open-source software (FS/{OSS). FS}/OSS is software whose source code is
+shared. Anyone can download the technology that makes a FS/OSS program run. And
+anyone eager to learn how a particular bit of FS/OSS technology works can
+tinker with the code.
+
+This opportunity creates a "completely new kind of learning platform," as Brown
+describes. "As soon as you start doing that, you ... unleash a free collage on
+the community, so that other people can start looking at your code, tinkering
+with it, trying it out, seeing if they can improve it." Each effort is a kind
+of apprenticeship. "Open source becomes a major apprenticeship platform."
+
+In this process, "the concrete things you tinker with are abstract. They are
+code." Kids are "shifting to the ability to tinker in the abstract, and this
+tinkering is no longer an isolated activity that you're doing in your garage.
+You are tinkering with a community platform. ... You are tinkering with other
+people's stuff. The more you tinker the more you improve." The more you
+improve, the more you learn.
+
+This same thing happens with content, too. And it happens in the same
+collaborative way when that content is part of the Web. As Brown puts it, "the
+Web [is] the first medium that truly honors multiple forms of intelligence."
+Earlier technologies, such as the typewriter or word processors, helped amplify
+text. But the Web amplifies much more than text. "The Web ... says if you are
+musical, if you are artistic, if you are visual, if you are interested in film
+... [then] there is a lot you can start to do on this medium. [It] can now
+amplify and honor these multiple forms of intelligence."
+
+Brown is talking about what Elizabeth Daley, Stephanie Barish, and Just Think!
+teach: that this tinkering with culture teaches as well as creates. It develops
+talents differently, and it builds a different kind of recognition.
+
+Yet the freedom to tinker with these objects is not guaranteed. Indeed, as
+we'll see through the course of this book, that freedom is increasingly highly
+contested. While there's no doubt that your father had the right to tinker with
+the car engine, there's great doubt that your child will have the right to
+tinker with the images she finds all around. The law and, increasingly,
+technology interfere with a freedom that technology, and curiosity, would
+otherwise ensure.
+
+These restrictions have become the focus of researchers and scholars. Professor
+Ed Felten of Princeton (whom we'll see more of in chapter 10) has developed a
+powerful argument in favor of the "right to tinker" as it applies to computer
+science and to knowledge in general.[^47] But Brown's concern is earlier, or
+younger, or more fundamental. It is about the learning that kids can do, or
+can't do, because of the law.
+
+"This is where education in the twenty-first century is going," Brown explains.
+We need to "understand how kids who grow up digital think and want to learn."
+
+"Yet," as Brown continued, and as the balance of this book will evince, "we are
+building a legal system that completely suppresses the natural tendencies of
+today's digital kids. ... We're building an architecture that unleashes 60
+percent of the brain [and] a legal system that closes down that part of the
+brain."
+
+We're building a technology that takes the magic of Kodak, mixes moving images
+and sound, and adds a space for commentary and an opportunity to spread that
+creativity everywhere. But we're building the law to close down that
+technology.
+
+"No way to run a culture," as Brewster Kahle, whom we'll meet in chapter 9,
+quipped to me in a rare moment of despondence.
