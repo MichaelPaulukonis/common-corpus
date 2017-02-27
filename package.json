@@ -1,10 +1,13 @@
 {
   "name": "common-corpus",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "common texts I use in NLG projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/",
+    "start": "node index.js",
+    "logs": "heroku logs -n 1500 > heroku.log",
+    "cover": "istanbul cover --include-all-sources node_modules/mocha/bin/_mocha test/"
   },
   "repository": {
     "type": "git",
@@ -25,6 +28,17 @@
   "homepage": "https://github.com/michaelpaulukonis/common-corpus#readme",
   "dependencies": {
     "iconv-lite": "0.4.15",
-    "nlp_compromise": "6.5.3"
+    "nlp_compromise": "6.5.3",
+    "node-zipkit": "0.1.2",
+    "unzip": "0.1.11"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "gulp": "3.9.1",
+    "gulp-eslint": "3.0.1",
+    "gulp-if": "2.0.2",
+    "gulp-mocha": "4.0.1",
+    "istanbul": "0.4.5",
+    "mocha": "3.2.0"
   }
 }

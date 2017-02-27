@@ -28,15 +28,31 @@ let Corpora = function() {
 
   let fs = require(`fs`),
       path = require(`path`),
+      zipkit = require(`node-zipkit`),
+      unzipLoc = path.join(__dirname, `./unzip-temp`),
       debreak = require(`./lib/debreak`),
       textutil = require(`./lib/textutil`),
+      // root = path.join(__dirname, `./corpus.zip`),
       root = path.join(__dirname, `./corpus`),
       books = walkSync(root),
       texts = [],
-      cleanName = (name) => name.replace(/.(txt|js)$/g, ``)
+      cleanName = (name) => name.replace(/.(txt|js|zip)$/g, ``)
         .replace(root, ``)
         .replace(/^\/|\\/, ``),
       gettext = function(filename) {
+        // if zip file, unzip it, and retrieve the zipped file
+        // if unzip folder does not exist, create it
+        // if unzipped file already exists, do not unzip!
+        if (filename.match(/zip$/)) {
+          let unzipName = filename.replace(root, unzipLoc).replace(/\.zip$/, ``);
+          if (!fs.existsSync(unzipName)) {
+            if (!fs.existsSync(unzipLoc)) {
+              fs.makeDir(unzipLoc);
+            }
+            zipkit.unzipSync(`"${filename}"`, unzipLoc);
+          }
+          filename = unzipName;
+        }
         let text = fs.readFileSync(filename),
             iconv = require(`iconv-lite`),
             book = iconv.decode(new Buffer(text), `ISO=8859-1`);
