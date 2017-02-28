@@ -7,7 +7,8 @@
     "test": "mocha test/",
     "start": "node index.js",
     "logs": "heroku logs -n 1500 > heroku.log",
-    "cover": "istanbul cover --include-all-sources node_modules/mocha/bin/_mocha test/"
+    "cover": "istanbul cover --include-all-sources node_modules/mocha/bin/_mocha test/",
+    "postinstall": "node zipper.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
   "homepage": "https://github.com/michaelpaulukonis/common-corpus#readme",
   "dependencies": {
     "iconv-lite": "0.4.15",
+    "mkdirp": "0.5.1",
     "nlp_compromise": "6.5.3",
     "node-zipkit": "0.1.2",
     "unzip": "0.1.11"
