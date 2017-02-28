@@ -25,11 +25,13 @@ let fs = require(`fs`),
     path = require(`path`),
     zipkit = require(`node-zipkit`),
     mkdirp = require(`mkdirp`),
+    rmdir = require(`rimraf`),
     unzipLoc = path.join(__dirname, `./zipped-corp`),
     root = path.join(__dirname, `./corpus`),
     books = walkSync(root),
     texts = [];
 
+try {
 for(let i = 0, len = books.length; i < len; i++) {
   let filename = books[i],
       cleanname = filename.replace(/ /g, `.`).replace(/&/g, `and`);
@@ -45,3 +47,10 @@ for(let i = 0, len = books.length; i < len; i++) {
   console.log(targName, `"${filename}"`);
   zipkit.zipSync(targName, `"${filename}"`);
 }
+} catch(err) {
+  console.log(`Could not complete unzip, did not delete source corpus.`, err);
+  process.exit;
+}
+
+// delete root path once zipped
+rmdir(root);

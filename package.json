@@ -32,6 +32,7 @@
     "mkdirp": "0.5.1",
     "nlp_compromise": "6.5.3",
     "node-zipkit": "0.1.2",
+    "rimraf": "2.6.1",
     "unzip": "0.1.11"
   },
   "devDependencies": {
