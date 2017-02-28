@@ -53,4 +53,4 @@ for(let i = 0, len = books.length; i < len; i++) {
 }
 
 // delete root path once zipped
-rmdir(root);
+rmdir(root, (err) => console.log(err));
