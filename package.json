@@ -7,8 +7,7 @@
     "test": "mocha test/",
     "start": "node index.js",
     "logs": "heroku logs -n 1500 > heroku.log",
-    "cover": "istanbul cover --include-all-sources node_modules/mocha/bin/_mocha test/",
-    "postinstall": "node zipper.js"
+    "cover": "istanbul cover --include-all-sources node_modules/mocha/bin/_mocha test/"
   },
   "repository": {
     "type": "git",
