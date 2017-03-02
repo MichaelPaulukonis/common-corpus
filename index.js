@@ -33,8 +33,7 @@ let Corpora = function() {
       unzipLoc = path.join(__dirname, `./unzip-temp`),
       debreak = require(`./lib/debreak`),
       textutil = require(`./lib/textutil`),
-      root = path.join(__dirname, `./zipped-corp`),
-      // root = path.join(__dirname, `./corpus`),
+      root = path.join(__dirname, `./corpus`),
       books = walkSync(root),
       texts = [],
       // uncompress is poorly named and/or poorly written
