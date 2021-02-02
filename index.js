@@ -62,7 +62,7 @@ let Corpora = function() {
         filename = uncompress(filename);
         let text = fs.readFileSync(filename),
             iconv = require(`iconv-lite`),
-            book = iconv.decode(new Buffer(text), `ISO=8859-1`);
+            book = iconv.decode(new Buffer.from(text), `ISO=8859-1`);
         // discard windows encoding thingy
         if (book.charCodeAt(0) === 0xFEFF) {
           book = book.slice(1);
