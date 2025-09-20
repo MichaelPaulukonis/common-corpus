@@ -76,8 +76,10 @@ node util.js --text "neuromancer"
 ### Development
 - [Architecture Overview](docs/architecture/system-design.md) - System design
 - [Deployment Guide](docs/deployment/README.md) - Publishing and deployment
+- [Deployment Options](docs/deployment/DEPLOYMENT_OPTIONS.md) - Layer vs Full API deployment
 
 ### Project Information
+- [Project Structure](docs/PROJECT_STRUCTURE.md) - Complete project organization
 - [Repository Analysis](docs/REPOSITORY_ANALYSIS.md) - Comprehensive project overview
 - [Product Requirements](docs/requirements/PRD.md) - Project goals and requirements
 - [Changelog](CHANGELOG.md) - Version history

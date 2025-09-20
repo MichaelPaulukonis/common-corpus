@@ -1,0 +1,92 @@
+# Example Terraform variables file for Common Corpus deployment
+# Copy this file to terraform.tfvars and customize for your environment
+
+# Basic Configuration
+aws_region  = "us-east-1"
+environment = "dev"
+
+# Lambda Layer
+layer_zip_path = "../common-corpus-layer.zip"
+
+# Lambda Runtime
+lambda_runtime = "nodejs18.x"
+
+# API Function Configuration
+api_memory_size = 512
+api_timeout     = 30
+
+# Batch Function Configuration  
+batch_memory_size = 1024
+batch_timeout     = 300
+
+# Corpus Configuration
+corpus_cache_size = 10
+batch_cache_size  = 20
+
+# Logging
+log_retention_days = 14
+log_level         = "INFO"
+
+# Monitoring
+enable_monitoring = true
+alarm_actions     = []  # Add SNS topic ARNs for notifications
+
+# Scheduled Processing
+enable_scheduled_analysis = false
+
+# API Gateway
+api_throttle_rate_limit  = 1000
+api_throttle_burst_limit = 2000
+
+# Security
+enable_xray_tracing = false
+
+# Additional Tags
+additional_tags = {
+  Owner       = "your-team"
+  Project     = "common-corpus"
+  CostCenter  = "engineering"
+}
+
+# Example configurations for different environments:
+
+# Development Environment
+# environment = "dev"
+# api_memory_size = 256
+# batch_memory_size = 512
+# corpus_cache_size = 5
+# log_retention_days = 7
+# enable_monitoring = false
+
+# Staging Environment  
+# environment = "staging"
+# api_memory_size = 512
+# batch_memory_size = 1024
+# corpus_cache_size = 10
+# log_retention_days = 14
+# enable_monitoring = true
+
+# Production Environment
+# environment = "prod"
+# api_memory_size = 1024
+# batch_memory_size = 2048
+# corpus_cache_size = 20
+# log_retention_days = 30
+# enable_monitoring = true
+# enable_xray_tracing = true
+# reserved_concurrent_executions = 100
+
+# VPC Configuration (uncomment if deploying in VPC)
+# vpc_config = {
+#   subnet_ids         = ["subnet-12345", "subnet-67890"]
+#   security_group_ids = ["sg-abcdef"]
+# }
+
+# Dead Letter Queue (uncomment if needed)
+# enable_dlq = true
+# dlq_target_arn = "arn:aws:sqs:us-east-1:123456789012:corpus-dlq"
+
+# Provisioned Concurrency (uncomment for consistent performance)
+# provisioned_concurrency_config = {
+#   provisioned_concurrent_executions = 5
+# }

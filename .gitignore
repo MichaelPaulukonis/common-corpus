@@ -42,3 +42,22 @@ corpus.zip/
 unzip-temp/
 corpus-zipped/
 zipped-corp/
+
+# Lambda deployment artifacts
+common-corpus-layer.zip
+lambda-layer/
+*.zip
+
+# Terraform artifacts
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+terraform/terraform.tfstate*
+terraform/terraform.tfvars
+terraform/tfplan
+terraform/lambda-function.zip
+terraform/layer-only/
+terraform/full-api/
+
+# Build artifacts
+dist/
+build/
